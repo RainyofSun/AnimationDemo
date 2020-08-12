@@ -1,0 +1,26 @@
+PODS:
+  - AvoidCrash (2.5.2)
+  - lottie-ios (2.5.3)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - AvoidCrash (~> 2.5.2)
+  - lottie-ios
+  - YYKit
+
+SPEC REPOS:
+  trunk:
+    - AvoidCrash
+    - lottie-ios
+    - YYKit
+
+SPEC CHECKSUMS:
+  AvoidCrash: 28c6916fe19bd2b84126b8dec7cbe61c9a12741d
+  lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: 0358b193dfd43111b0672fe06ea3f30f837b0106
+
+COCOAPODS: 1.8.4
