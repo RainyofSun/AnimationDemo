@@ -67,6 +67,13 @@
         }
     }];
     
+    NSMutableAttributedString *tempAttribute4 = [[NSMutableAttributedString alloc] initWithString:@"文字动画\n" attributes:@{NSFontAttributeName:attributeFont}];
+    [tempLab addAttributedString:tempAttribute4 option:^(NSAttributedString * _Nonnull attributedString) {
+        if (touchCallBack) {
+            touchCallBack(@"DrawWordsAnimationLayer");
+        }
+    }];
+    
     return tempLab;
 }
 
@@ -97,6 +104,11 @@
         NSLog(@"动画结束了");
     };
     return cherryTreeAnimationView;
+}
+
+// 创建文字动画
+- (void)setupWordsAnimation:(NSString *)animationText animationView:(nonnull UIView *)view {
+    [DrawWordsAnimationLayer createAnimationLayerWithWords:animationText animationRect:CGRectMake(0, 200, ScreenWidth, ScreenWidth) animationView:view animationWordsFont:[UIFont systemFontOfSize:40] strokeColor:[UIColor purpleColor]];
 }
 
 @end

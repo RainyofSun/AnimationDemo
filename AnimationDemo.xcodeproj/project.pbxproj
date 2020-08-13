@@ -63,6 +63,7 @@
 		135383FE24DD25C600F511B4 /* GraffitiPictureVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 135383FD24DD25C600F511B4 /* GraffitiPictureVM.m */; };
 		1353840224DD262D00F511B4 /* GraffitiPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1353840124DD262D00F511B4 /* GraffitiPictureView.m */; };
 		1353840424DD263B00F511B4 /* GraffitiPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1353840324DD263B00F511B4 /* GraffitiPictureView.xib */; };
+		13FC9DF424E51E460021453C /* DrawWordsAnimationLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 13FC9DF324E51E460021453C /* DrawWordsAnimationLayer.m */; };
 		C4DA2CFE02DD4CB6E0CEAEA6 /* Pods_AnimationDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB196A7E5367D8D33290473 /* Pods_AnimationDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -172,6 +173,8 @@
 		1353840024DD262D00F511B4 /* GraffitiPictureView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraffitiPictureView.h; sourceTree = "<group>"; };
 		1353840124DD262D00F511B4 /* GraffitiPictureView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraffitiPictureView.m; sourceTree = "<group>"; };
 		1353840324DD263B00F511B4 /* GraffitiPictureView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GraffitiPictureView.xib; sourceTree = "<group>"; };
+		13FC9DF224E51E460021453C /* DrawWordsAnimationLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawWordsAnimationLayer.h; sourceTree = "<group>"; };
+		13FC9DF324E51E460021453C /* DrawWordsAnimationLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawWordsAnimationLayer.m; sourceTree = "<group>"; };
 		43A328AA8FD371806CAE8215 /* Pods-AnimationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationDemo.release.xcconfig"; path = "Target Support Files/Pods-AnimationDemo/Pods-AnimationDemo.release.xcconfig"; sourceTree = "<group>"; };
 		5BB196A7E5367D8D33290473 /* Pods_AnimationDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimationDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0629194D99354735822F639 /* Pods-AnimationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationDemo.debug.xcconfig"; path = "Target Support Files/Pods-AnimationDemo/Pods-AnimationDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -598,6 +601,7 @@
 		1345CA6124D2C5C000FDD6E8 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				13FC9DF124E5183D0021453C /* DrawWordsAnimation */,
 				133B457A24DA9DC500DE64CD /* CherryTreeAnimation */,
 				13233D1C24D94C300078113B /* SnowAnimation */,
 				13233D0024D7E65C0078113B /* AnimationLab */,
@@ -692,6 +696,15 @@
 				1353840324DD263B00F511B4 /* GraffitiPictureView.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		13FC9DF124E5183D0021453C /* DrawWordsAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				13FC9DF224E51E460021453C /* DrawWordsAnimationLayer.h */,
+				13FC9DF324E51E460021453C /* DrawWordsAnimationLayer.m */,
+			);
+			path = DrawWordsAnimation;
 			sourceTree = "<group>";
 		};
 		731C81D10224FF5EAB662B80 /* Pods */ = {
@@ -841,6 +854,7 @@
 				13233D0D24D810630078113B /* TapLabel.m in Sources */,
 				1345CA3424D2ABD000FDD6E8 /* AnimationMainViewModel.m in Sources */,
 				13233D1124D937EB0078113B /* AnimationBookVM.m in Sources */,
+				13FC9DF424E51E460021453C /* DrawWordsAnimationLayer.m in Sources */,
 				1353840224DD262D00F511B4 /* GraffitiPictureView.m in Sources */,
 				1345CA6B24D3F57900FDD6E8 /* AnimationBookViewController.m in Sources */,
 				1345CA4224D2B03B00FDD6E8 /* AnimationBaseViewController.m in Sources */,

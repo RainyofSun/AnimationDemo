@@ -31,7 +31,11 @@
         if ([animationThings isKindOfClass:[UIView class]]) {
             [weak_self.view addSubview:(UIView *)animationThings];
         } else if ([animationThings isKindOfClass:[NSString class]]) {
-            [weak_self pushVC:(NSString *)animationThings];
+            if ([animationThings isEqual:@"DrawWordsAnimationLayer"]) {
+                [weak_self.bookVM setupWordsAnimation:@"Love You" animationView:weak_self.view];
+            } else {
+                [weak_self pushVC:(NSString *)animationThings];
+            }
         }
     }]];
     [self.view addSubview:[self.bookVM setupIrregularityLabel]];

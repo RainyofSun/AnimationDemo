@@ -11,6 +11,7 @@
 #import "IrregularityLabel.h"
 #import "SnowAnimationView.h"
 #import "CherryTreeAnimationView.h"
+#import "DrawWordsAnimationLayer.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -26,6 +27,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (SnowAnimationView *)setupSnowAnimation;
 /// 创建樱花动画
 - (CherryTreeAnimationView *)setupCherryTreeAnimation;
+/// 创建文字动画
+- (void)setupWordsAnimation:(NSString *)animationText animationView:(UIView *)view;
 
 @end
 
