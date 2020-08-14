@@ -53,7 +53,7 @@
             // 设置起点
             [path moveToPoint:point];
         } else {
-            // 设置第二条线的终点
+            //设置第二个条线的终点,会自动把上一个终点当做起点
             [path addLineToPoint:point];
         }
     }
@@ -119,7 +119,7 @@
     CGFloat midY = startPoint.y;
     [self.pointArr removeAllObjects];
     [self.pointArr addObject:NSStringFromCGPoint(startPoint)];
-    
+//     NSLog(@"-----create first point  %@",NSStringFromCGPoint(CGPointMake(midX, midY)));
     while (midY < endPoint.y) {
         if (startPoint.x < [UIScreen mainScreen].bounds.size.width/2) {
             midX += (arc4random()%3 - 0.5) * displace;
@@ -128,7 +128,7 @@
             midX -= (arc4random()%3 - 0.5) * displace;
             midY += (arc4random()%5 - 0.5) * displace;
         }
-        
+//        NSLog(@"-----create point  %@",NSStringFromCGPoint(CGPointMake(midX, midY)));
         [self.pointArr addObject:NSStringFromCGPoint(CGPointMake(midX, midY))];
     }
 }
@@ -178,27 +178,28 @@
     for (NSInteger i = 0; i < self.pointArr.count; i ++) {
         point = CGPointFromString(self.pointArr[i]);
         if (i == 0) {
-            // 绘制起点
+            //画线,设置起点
             [path moveToPoint:point];
         } else {
-            // 设置第二条线终点
+            //设置第二个条线的终点,会自动把上一个终点当做起点
             [path addLineToPoint:point];
         }
         
-        if ([self.branchLightningStartPointArr componentsJoinedByString:NSStringFromCGPoint(point)]) {
+        if ([self.branchLightningStartPointArr containsObject:NSStringFromCGPoint(point)]) {
             NSMutableArray *branchArray = [self setupBranchLightningPathPointWithStartPoint:point endPoint:CGPointMake(point.x + 100, point.y + 100) displace:1];
-            UIBezierPath *branchpath = [UIBezierPath bezierPath];
+            UIBezierPath *branchPath = [UIBezierPath bezierPath];
             CGPoint branchPoint;
             for (NSInteger j = 0; j < branchArray.count; j ++) {
                 branchPoint = CGPointFromString(branchArray[j]);
                 if (j == 0) {
-                    [branchpath moveToPoint:branchPoint];
+                    //画线,设置起点
+                    [branchPath moveToPoint:branchPoint];
                 } else {
-                    [branchpath addLineToPoint:branchPoint];
+                    //设置第二个条线的终点,会自动把上一个终点当做起点
+                    [branchPath addLineToPoint:branchPoint];
                 }
             }
-            
-            [self.bezierPathArr addObject:branchpath];
+            [self.bezierPathArr addObject:branchPath];
         }
     }
 }
