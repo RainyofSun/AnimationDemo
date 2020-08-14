@@ -135,7 +135,9 @@
 
 #pragma mark - EGLSGCDTimerDelegate
 - (void)countDownRefreshUI {
-    [self.lightningAnimationLayer setNeedsDisplay];
+    if ([EGLSGlobalGCDTimer GlobalTimerSetUp].clockTime%3 == 0) {
+        [self.lightningAnimationLayer setNeedsDisplay];
+    }
 }
 
 @end

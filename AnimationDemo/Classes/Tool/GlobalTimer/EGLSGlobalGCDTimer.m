@@ -16,6 +16,8 @@ static EGLSGlobalGCDTimer *gcdTimer = nil;
 @property (nonatomic,strong) dispatch_source_t timer;
 /** isResumeTimer */
 @property (nonatomic,readwrite) BOOL isResumeTimer;
+/** clockTime */
+@property (nonatomic,readwrite) NSUInteger clockTime;
 
 @end
 
@@ -27,6 +29,7 @@ static EGLSGlobalGCDTimer *gcdTimer = nil;
         if (!gcdTimer) {
             gcdTimer = [[EGLSGlobalGCDTimer alloc] init];
             gcdTimer.timerQueue = dispatch_get_main_queue();
+            gcdTimer.clockTime = 0;
             [gcdTimer addTimerSource];
         }
     });
@@ -60,6 +63,7 @@ static EGLSGlobalGCDTimer *gcdTimer = nil;
         if (result == 0) {
             dispatch_source_cancel(self.timer);
             self.timer = nil;
+            self.clockTime = 0;
         } else {
             NSLog(@"定时器已取消");
         }
@@ -71,10 +75,17 @@ static EGLSGlobalGCDTimer *gcdTimer = nil;
 #pragma mark - private methods
 - (void)addTimerSource {
     WEAK_DEFINE(self);
-    dispatch_source_set_timer(self.timer, DISPATCH_TIME_NOW, 3 * NSEC_PER_SEC, 0 * NSEC_PER_SEC);
+    dispatch_source_set_timer(self.timer, DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC, 0 * NSEC_PER_SEC);
     dispatch_source_set_event_handler(self.timer, ^{
         dispatch_async(dispatch_get_main_queue(), ^{
+            if (weak_self.clockTime == LONG_MAX) {
+                // 防止数值溢出
+                weak_self.clockTime = 0;
+                NSLog(@"数值溢出 归零");
+            }
+            NSLog(@"数字 %lu",(unsigned long)weak_self.clockTime);
             if (weak_self.timerDelegate != nil && [weak_self.timerDelegate respondsToSelector:@selector(countDownRefreshUI)]) {
+                weak_self.clockTime ++;
                 [weak_self.timerDelegate countDownRefreshUI];
             }
         });

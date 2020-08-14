@@ -26,6 +26,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,weak) id<EGLSGCDTimerDelegate> timerDelegate;
 /** isResumeTimer */
 @property (nonatomic,readonly) BOOL isResumeTimer;
+/** clockTime */
+@property (nonatomic,readonly) NSUInteger clockTime;
 
 /// 创建定时器
 + (instancetype)GlobalTimerSetUp;
