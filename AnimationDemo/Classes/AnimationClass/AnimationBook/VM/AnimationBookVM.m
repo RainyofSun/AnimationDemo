@@ -8,8 +8,12 @@
 
 #import "AnimationBookVM.h"
 #import "UIViewController+BookCoverAnimation.h"
+#import "DrawLightningAnimationLayer.h"
 
-@interface AnimationBookVM ()
+@interface AnimationBookVM ()<EGLSGCDTimerDelegate>
+
+/** lightningAnimationLayer */
+@property (nonatomic,strong) DrawLightningAnimationLayer *lightningAnimationLayer;
 
 @end
 
@@ -34,7 +38,7 @@
 
 // 创建点击的label
 - (TapLabel *)setupTapLabel:(void (^)(id _Nonnull))touchCallBack {
-    TapLabel *tempLab = [[TapLabel alloc] initWithFrame:CGRectMake(10, 100, ScreenWidth - 20, 120)];
+    TapLabel *tempLab = [[TapLabel alloc] initWithFrame:CGRectMake(10, 100, ScreenWidth - 20, 200)];
     tempLab.backgroundColor = [UIColor yellowColor];
     tempLab.numberOfLines = 0;
     UIFont *attributeFont = [UIFont systemFontOfSize:18];
@@ -74,6 +78,13 @@
         }
     }];
     
+    NSMutableAttributedString *tempAttribute5 = [[NSMutableAttributedString alloc] initWithString:@"闪电动画\n" attributes:@{NSFontAttributeName:attributeFont}];
+    [tempLab addAttributedString:tempAttribute5 option:^(NSAttributedString * _Nonnull attributedString) {
+        if (touchCallBack) {
+            touchCallBack(@"DrawLightningAnimationLayer");
+        }
+    }];
+    
     return tempLab;
 }
 
@@ -107,8 +118,24 @@
 }
 
 // 创建文字动画
-- (void)setupWordsAnimation:(NSString *)animationText animationView:(nonnull UIView *)view {
-    [DrawWordsAnimationLayer createAnimationLayerWithWords:animationText animationRect:CGRectMake(0, 200, ScreenWidth, ScreenWidth) animationView:view animationWordsFont:[UIFont systemFontOfSize:40] strokeColor:[UIColor purpleColor]];
+- (DrawWordsAnimationLayer *)setupWordsAnimation:(NSString *)animationText {
+    DrawWordsAnimationLayer *animationLayer = [DrawWordsAnimationLayer layer];
+    [animationLayer createAnimationLayerWithWords:animationText animationRect:CGRectMake(0, 200, ScreenWidth, ScreenWidth) animationWordsFont:[UIFont systemFontOfSize:50] strokeColor:[UIColor purpleColor]];
+    return animationLayer;
+}
+
+// 创建闪电动画
+- (void)setupLightningAnimation:(UIView *)animationView {
+    self.lightningAnimationLayer = [DrawLightningAnimationLayer layer];
+    self.lightningAnimationLayer.frame = animationView.layer.frame;
+    [animationView.layer addSublayer:self.lightningAnimationLayer];
+    [EGLSGlobalGCDTimer GlobalTimerSetUp].timerDelegate = self;
+    [[EGLSGlobalGCDTimer GlobalTimerSetUp] timerStart];
+}
+
+#pragma mark - EGLSGCDTimerDelegate
+- (void)countDownRefreshUI {
+    [self.lightningAnimationLayer setNeedsDisplay];
 }
 
 @end

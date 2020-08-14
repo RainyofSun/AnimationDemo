@@ -32,7 +32,9 @@
             [weak_self.view addSubview:(UIView *)animationThings];
         } else if ([animationThings isKindOfClass:[NSString class]]) {
             if ([animationThings isEqual:@"DrawWordsAnimationLayer"]) {
-                [weak_self.bookVM setupWordsAnimation:@"Love You" animationView:weak_self.view];
+                [weak_self.view.layer addSublayer:[weak_self.bookVM setupWordsAnimation:@"Love You"]];
+            } else if ([animationThings isEqual:@"DrawLightningAnimationLayer"]) {
+                [weak_self.bookVM setupLightningAnimation:weak_self.view];
             } else {
                 [weak_self pushVC:(NSString *)animationThings];
             }

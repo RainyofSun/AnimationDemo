@@ -28,7 +28,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 创建樱花动画
 - (CherryTreeAnimationView *)setupCherryTreeAnimation;
 /// 创建文字动画
-- (void)setupWordsAnimation:(NSString *)animationText animationView:(UIView *)view;
+- (DrawWordsAnimationLayer *)setupWordsAnimation:(NSString *)animationText;
+/// 创建闪电动画
+- (void)setupLightningAnimation:(UIView *)animationView;
 
 @end
 

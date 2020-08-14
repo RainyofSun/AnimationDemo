@@ -8,7 +8,7 @@
 
 #import "DrawWordsAnimationLayer.h"
 
-@interface DrawWordsAnimationLayer ()
+@interface DrawWordsAnimationLayer ()<CAAnimationDelegate>
 
 @property (nonatomic,retain)CAShapeLayer *pathLayer;
 @property (nonatomic,retain)CAShapeLayer *heartPathLayer;
@@ -22,20 +22,8 @@
     NSLog(@"DELLOC : %@",NSStringFromClass(self.class));
 }
 
-+ (void)createAnimationLayerWithWords:(NSString *)animationWords animationRect:(CGRect)rect animationView:(UIView *)view animationWordsFont:(UIFont *)font strokeColor:(UIColor *)strokeColor {
-    DrawWordsAnimationLayer *animationLayer = [DrawWordsAnimationLayer layer];
-    animationLayer.frame = rect;
-    [view.layer addSublayer:animationLayer];
-    
-    if (animationLayer.pathLayer != nil) {
-        [animationLayer.pathLayer removeFromSuperlayer];
-        [animationLayer.penLayer removeFromSuperlayer];
-        [animationLayer.heartPathLayer removeFromSuperlayer];
-        animationLayer.pathLayer = nil;
-        animationLayer.penLayer = nil;
-        animationLayer.heartPathLayer = nil;
-    }
-    
+- (void)createAnimationLayerWithWords:(NSString *)animationWords animationRect:(CGRect)rect animationWordsFont:(UIFont *)font strokeColor:(UIColor *)strokeColor {
+    self.frame = rect;
     CTFontRef wordsFont = CTFontCreateWithName((CFStringRef)font.fontName, font.pointSize, NULL);
     CGMutablePathRef letters = CGPathCreateMutable();
     
@@ -49,14 +37,14 @@
         CTRunRef run = (CTRunRef)CFArrayGetValueAtIndex(runArr, runIndex);
         CTFontRef runFont = CFDictionaryGetValue(CTRunGetAttributes(run), kCTFontAttributeName);
         
-        for (CFIndex runGlyshIndex = 0; runGlyshIndex < CTRunGetGlyphCount(run); runGlyshIndex ++) {
-            CFRange thisGlyphRange = CFRangeMake(runIndex, 1);
-            CGGlyph glysh;
+        for (CFIndex runGlyphIndex = 0; runGlyphIndex < CTRunGetGlyphCount(run); runGlyphIndex ++) {
+            CFRange thisGlyphRange = CFRangeMake(runGlyphIndex, 1);
+            CGGlyph glyph;
             CGPoint position;
-            CTRunGetGlyphs(run, thisGlyphRange, &glysh);
+            CTRunGetGlyphs(run, thisGlyphRange, &glyph);
             CTRunGetPositions(run, thisGlyphRange, &position);
             {
-                CGPathRef letter = CTFontCreatePathForGlyph(runFont, glysh, NULL);
+                CGPathRef letter = CTFontCreatePathForGlyph(runFont, glyph, NULL);
                 CGAffineTransform t = CGAffineTransformMakeTranslation(position.x, position.y);
                 CGPathAddPath(letters, &t, letter);
                 CGPathRelease(letter);
@@ -80,10 +68,11 @@
     pathLayer.geometryFlipped = YES;
     pathLayer.path = path.CGPath;
     pathLayer.strokeColor = [strokeColor CGColor];
+    pathLayer.fillColor = nil;//填充字体颜色,如果设置了就会提前出现
     pathLayer.lineWidth = 1.f;
     pathLayer.lineJoin = kCALineJoinBevel;
-    [animationLayer addSublayer:pathLayer];
-    animationLayer.pathLayer = pathLayer;
+    [self addSublayer:pathLayer];
+    self.pathLayer = pathLayer;
     
     UIImage *penImage = [UIImage imageNamed:@"pen"];
     CALayer *penLayer = [CALayer layer];
@@ -91,13 +80,46 @@
     penLayer.anchorPoint = CGPointZero;
     penLayer.frame = CGRectMake(0, 0, penImage.size.width, penImage.size.height);
     [pathLayer addSublayer:penLayer];
-    animationLayer.penLayer = penLayer;
+    self.penLayer = penLayer;
     
-    [animationLayer.pathLayer removeAllAnimations];
-    [animationLayer.penLayer removeAllAnimations];
+    [self.pathLayer removeAllAnimations];
+    [self.penLayer removeAllAnimations];
     
-    animationLayer.penLayer.hidden = NO;
+    self.penLayer.hidden = NO;
     
+    [self drawHeart:rect];
+//    [self drawHeart:CGRectMake(rect.origin.x, rect.origin.y, rect.size.width * 0.7, rect.size.height * 0.8)];
+    
+    CABasicAnimation *pathAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
+    pathAnimation.duration = 5.f;
+    pathAnimation.fromValue = [NSNumber numberWithFloat:0.f];
+    pathAnimation.toValue = [NSNumber numberWithFloat:1.f];
+    [self.pathLayer addAnimation:pathAnimation forKey:@"strokeEnd"];
+    
+    CAKeyframeAnimation *penAnimation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
+    penAnimation.duration = 5.f;
+    penAnimation.path = self.pathLayer.path;
+    penAnimation.calculationMode = kCAAnimationPaced;
+    penAnimation.delegate = self;
+    [self.penLayer addAnimation:penAnimation forKey:@"strokeEnd"];
+}
+
+- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.pathLayer removeAllAnimations];
+        [self.penLayer removeAllAnimations];
+        [self.heartPathLayer removeAllAnimations];
+        [self.pathLayer removeFromSuperlayer];
+        [self.penLayer removeFromSuperlayer];
+        [self.heartPathLayer removeFromSuperlayer];
+        self.pathLayer = nil;
+        self.penLayer = nil;
+        self.heartPathLayer = nil;
+        [self removeFromSuperlayer];
+    });
+}
+
+- (void)drawHeart:(CGRect)rect {
     CGFloat spaceWidth = 20.f;
     CGFloat radius = MIN((CGRectGetWidth(rect) - spaceWidth*2)/4, (CGRectGetHeight(rect) - spaceWidth*2)/4);
     
@@ -121,7 +143,7 @@
     heartPathLayer.fillColor = nil;
     heartPathLayer.lineWidth = heartLineW;
     heartPathLayer.lineJoin = kCALineJoinRound;
-    [animationLayer addSublayer:heartPathLayer];
+    [self addSublayer:heartPathLayer];
     
     CABasicAnimation *heartPathAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
     heartPathAnimation.duration = 5.f;
@@ -140,25 +162,13 @@
     heartRightLayer.fillColor = nil;
     heartRightLayer.lineWidth = heartLineW;
     heartRightLayer.lineJoin = kCALineJoinRound;
-    [animationLayer addSublayer:heartRightLayer];
+    [self addSublayer:heartRightLayer];
     
     CABasicAnimation *heartRightAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
     heartRightAnimation.duration = 5.f;
     heartRightAnimation.fromValue = [NSNumber numberWithFloat:0.f];
     heartRightAnimation.toValue = [NSNumber numberWithFloat:1.f];
     [heartRightLayer addAnimation:heartRightAnimation forKey:@"strokeEnd"];
-    
-    CABasicAnimation *pathAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
-    pathAnimation.duration = 5.f;
-    pathAnimation.fromValue = [NSNumber numberWithFloat:0.f];
-    pathAnimation.toValue = [NSNumber numberWithFloat:1.f];
-    [animationLayer.pathLayer addAnimation:pathAnimation forKey:@"strokeEnd"];
-    
-    CAKeyframeAnimation *penAnimation = [CAKeyframeAnimation animationWithKeyPath:@"strokeEnd"];
-    penAnimation.duration = 5.f;
-    penAnimation.path = animationLayer.pathLayer.path;
-    penAnimation.calculationMode = kCAAnimationPaced;
-    [animationLayer.penLayer addAnimation:penAnimation forKey:@"strokeEnd"];
 }
 
 @end

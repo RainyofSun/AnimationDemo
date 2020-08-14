@@ -71,7 +71,7 @@ static EGLSGlobalGCDTimer *gcdTimer = nil;
 #pragma mark - private methods
 - (void)addTimerSource {
     WEAK_DEFINE(self);
-    dispatch_source_set_timer(self.timer, DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC, 0 * NSEC_PER_SEC);
+    dispatch_source_set_timer(self.timer, DISPATCH_TIME_NOW, 3 * NSEC_PER_SEC, 0 * NSEC_PER_SEC);
     dispatch_source_set_event_handler(self.timer, ^{
         dispatch_async(dispatch_get_main_queue(), ^{
             if (weak_self.timerDelegate != nil && [weak_self.timerDelegate respondsToSelector:@selector(countDownRefreshUI)]) {

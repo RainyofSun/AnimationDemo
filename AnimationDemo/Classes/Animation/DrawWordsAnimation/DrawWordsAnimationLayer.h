@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DrawWordsAnimationLayer : CALayer
 
-+ (void)createAnimationLayerWithWords:(NSString *)animationWords animationRect:(CGRect)rect animationView:(UIView *)view animationWordsFont:(UIFont *)font strokeColor:(UIColor *)strokeColor;
+- (void)createAnimationLayerWithWords:(NSString *)animationWords animationRect:(CGRect)rect animationWordsFont:(UIFont *)font strokeColor:(UIColor *)strokeColor;
 
 @end
 
