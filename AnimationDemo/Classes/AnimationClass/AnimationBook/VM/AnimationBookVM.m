@@ -9,6 +9,7 @@
 #import "AnimationBookVM.h"
 #import "UIViewController+BookCoverAnimation.h"
 #import "DrawLightningAnimationLayer.h"
+#import "StoryMakeImageEditorViewController.h"
 
 @interface AnimationBookVM ()<EGLSGCDTimerDelegate>
 
@@ -85,6 +86,13 @@
         }
     }];
     
+    NSMutableAttributedString *tempAttribute6 = [[NSMutableAttributedString alloc] initWithString:@"美图贴纸\n" attributes:@{NSFontAttributeName:attributeFont}];
+    [tempLab addAttributedString:tempAttribute6 option:^(NSAttributedString * _Nonnull attributedString) {
+        if (touchCallBack) {
+            touchCallBack(@"StoryMakeImageEditorViewController");
+        }
+    }];
+    
     return tempLab;
 }
 
@@ -131,6 +139,13 @@
     [animationView.layer addSublayer:self.lightningAnimationLayer];
     [EGLSGlobalGCDTimer GlobalTimerSetUp].timerDelegate = self;
     [[EGLSGlobalGCDTimer GlobalTimerSetUp] timerStart];
+}
+
+// 美图贴纸
+- (void)stickerVC:(UIViewController *)vc {
+    UIImage *image = [UIImage imageNamed:@"bgStory.jpg"];
+    StoryMakeImageEditorViewController *storyMakerVc = [[StoryMakeImageEditorViewController alloc] initWithImage:image];
+    [vc presentViewController:storyMakerVc animated:YES completion:nil];
 }
 
 #pragma mark - EGLSGCDTimerDelegate

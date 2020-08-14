@@ -35,6 +35,8 @@
                 [weak_self.view.layer addSublayer:[weak_self.bookVM setupWordsAnimation:@"Love You"]];
             } else if ([animationThings isEqual:@"DrawLightningAnimationLayer"]) {
                 [weak_self.bookVM setupLightningAnimation:weak_self.view];
+            } else if ([animationThings isEqual:@"StoryMakeImageEditorViewController"]) {
+                [weak_self.bookVM stickerVC:weak_self];
             } else {
                 [weak_self pushVC:(NSString *)animationThings];
             }

@@ -63,6 +63,37 @@
 		135383FE24DD25C600F511B4 /* GraffitiPictureVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 135383FD24DD25C600F511B4 /* GraffitiPictureVM.m */; };
 		1353840224DD262D00F511B4 /* GraffitiPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1353840124DD262D00F511B4 /* GraffitiPictureView.m */; };
 		1353840424DD263B00F511B4 /* GraffitiPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1353840324DD263B00F511B4 /* GraffitiPictureView.xib */; };
+		13DBAED124E67A6500BD55E8 /* WeatherAnimationRes.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13DBAED024E67A6500BD55E8 /* WeatherAnimationRes.xcassets */; };
+		13DBAEEE24E689C000BD55E8 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DBAED624E689C000BD55E8 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		13DBAEEF24E689C000BD55E8 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DBAEDF24E689C000BD55E8 /* ViewController+MASAdditions.m */; };
+		13DBAEF024E689C000BD55E8 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DBAEE324E689C000BD55E8 /* MASCompositeConstraint.m */; };
+		13DBAEF124E689C000BD55E8 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DBAEE424E689C000BD55E8 /* MASConstraintMaker.m */; };
+		13DBAEF224E689C000BD55E8 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DBAEE524E689C000BD55E8 /* MASLayoutConstraint.m */; };
+		13DBAEF324E689C000BD55E8 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DBAEE624E689C000BD55E8 /* NSArray+MASAdditions.m */; };
+		13DBAEF424E689C000BD55E8 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DBAEE724E689C000BD55E8 /* View+MASAdditions.m */; };
+		13DBAEF524E689C000BD55E8 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DBAEEA24E689C000BD55E8 /* MASConstraint.m */; };
+		13DBAEF624E689C000BD55E8 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DBAEEC24E689C000BD55E8 /* MASViewConstraint.m */; };
+		13DBAEF724E689C000BD55E8 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DBAEED24E689C000BD55E8 /* MASViewAttribute.m */; };
+		13DBAF3024E68A0700BD55E8 /* StoryMakeImageEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DBAEFA24E68A0700BD55E8 /* StoryMakeImageEditorViewController.m */; };
+		13DBAF3124E68A0700BD55E8 /* StoryMakeSelectColorFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DBAEFF24E68A0700BD55E8 /* StoryMakeSelectColorFooterView.m */; };
+		13DBAF3224E68A0700BD55E8 /* StoryMakeStickerColorFootCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DBAF0124E68A0700BD55E8 /* StoryMakeStickerColorFootCollectionViewCell.m */; };
+		13DBAF3324E68A0700BD55E8 /* StoryMakeStickerLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DBAF0224E68A0700BD55E8 /* StoryMakeStickerLabelView.m */; };
+		13DBAF3424E68A0700BD55E8 /* StoryMakeStickerColorFootSingleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DBAF0424E68A0700BD55E8 /* StoryMakeStickerColorFootSingleViewController.m */; };
+		13DBAF3524E68A0700BD55E8 /* StoryMakeToolsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DBAF0624E68A0700BD55E8 /* StoryMakeToolsView.m */; };
+		13DBAF3624E68A0700BD55E8 /* StoryMakeStickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DBAF0B24E68A0700BD55E8 /* StoryMakeStickerView.m */; };
+		13DBAF3724E68A0700BD55E8 /* StoryMakeStickerFooterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DBAF0D24E68A0700BD55E8 /* StoryMakeStickerFooterCell.m */; };
+		13DBAF3824E68A0700BD55E8 /* StoryMakeStickerBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DBAF0E24E68A0700BD55E8 /* StoryMakeStickerBaseView.m */; };
+		13DBAF3924E68A0700BD55E8 /* StoryMakeStickerFootSingleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DBAF1024E68A0700BD55E8 /* StoryMakeStickerFootSingleViewController.m */; };
+		13DBAF3A24E68A0700BD55E8 /* StoryMakeStickerImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DBAF1124E68A0700BD55E8 /* StoryMakeStickerImageView.m */; };
+		13DBAF3B24E68A0700BD55E8 /* StoryMakeFilterFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DBAF1424E68A0700BD55E8 /* StoryMakeFilterFooterView.m */; };
+		13DBAF3C24E68A0700BD55E8 /* StoryMakeFooterFilterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DBAF1524E68A0700BD55E8 /* StoryMakeFooterFilterCell.m */; };
+		13DBAF3D24E68A0700BD55E8 /* ImageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DBAF1824E68A0700BD55E8 /* ImageUtil.m */; };
+		13DBAF3E24E68A0700BD55E8 /* LJBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DBAF1F24E68A0700BD55E8 /* LJBaseModel.m */; };
+		13DBAF4124E68A0700BD55E8 /* LSDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DBAF2524E68A0700BD55E8 /* LSDrawView.m */; };
+		13DBAF4224E68A0700BD55E8 /* StoryMakerFontManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DBAF2A24E68A0700BD55E8 /* StoryMakerFontManager.m */; };
+		13DBAF4324E68A0800BD55E8 /* UIImage+imageWithColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DBAF2B24E68A0700BD55E8 /* UIImage+imageWithColor.m */; };
+		13DBAF4424E68A0800BD55E8 /* CDPMonitorKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DBAF2C24E68A0700BD55E8 /* CDPMonitorKeyboard.m */; };
+		13DBAF4524E68A0800BD55E8 /* StoryMaker.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13DBAF2F24E68A0700BD55E8 /* StoryMaker.xcassets */; };
 		13FC9DF424E51E460021453C /* DrawWordsAnimationLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 13FC9DF324E51E460021453C /* DrawWordsAnimationLayer.m */; };
 		13FC9DF824E53B8C0021453C /* DrawLightningAnimationLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 13FC9DF724E53B8C0021453C /* DrawLightningAnimationLayer.m */; };
 		C4DA2CFE02DD4CB6E0CEAEA6 /* Pods_AnimationDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB196A7E5367D8D33290473 /* Pods_AnimationDemo.framework */; };
@@ -174,6 +205,73 @@
 		1353840024DD262D00F511B4 /* GraffitiPictureView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraffitiPictureView.h; sourceTree = "<group>"; };
 		1353840124DD262D00F511B4 /* GraffitiPictureView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraffitiPictureView.m; sourceTree = "<group>"; };
 		1353840324DD263B00F511B4 /* GraffitiPictureView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GraffitiPictureView.xib; sourceTree = "<group>"; };
+		13DBAED024E67A6500BD55E8 /* WeatherAnimationRes.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = WeatherAnimationRes.xcassets; sourceTree = "<group>"; };
+		13DBAED524E689C000BD55E8 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		13DBAED624E689C000BD55E8 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		13DBAED724E689C000BD55E8 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		13DBAED824E689C000BD55E8 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		13DBAED924E689C000BD55E8 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		13DBAEDA24E689C000BD55E8 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		13DBAEDB24E689C000BD55E8 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		13DBAEDC24E689C000BD55E8 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		13DBAEDD24E689C000BD55E8 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		13DBAEDE24E689C000BD55E8 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		13DBAEDF24E689C000BD55E8 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		13DBAEE024E689C000BD55E8 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		13DBAEE124E689C000BD55E8 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		13DBAEE224E689C000BD55E8 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		13DBAEE324E689C000BD55E8 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		13DBAEE424E689C000BD55E8 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		13DBAEE524E689C000BD55E8 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		13DBAEE624E689C000BD55E8 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		13DBAEE724E689C000BD55E8 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		13DBAEE824E689C000BD55E8 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		13DBAEE924E689C000BD55E8 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		13DBAEEA24E689C000BD55E8 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		13DBAEEB24E689C000BD55E8 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		13DBAEEC24E689C000BD55E8 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		13DBAEED24E689C000BD55E8 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		13DBAEF924E68A0700BD55E8 /* StoryMakeImageEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakeImageEditorViewController.h; sourceTree = "<group>"; };
+		13DBAEFA24E68A0700BD55E8 /* StoryMakeImageEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakeImageEditorViewController.m; sourceTree = "<group>"; };
+		13DBAEFD24E68A0700BD55E8 /* StoryMakeStickerColorFootCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakeStickerColorFootCollectionViewCell.h; sourceTree = "<group>"; };
+		13DBAEFE24E68A0700BD55E8 /* StoryMakeStickerLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakeStickerLabelView.h; sourceTree = "<group>"; };
+		13DBAEFF24E68A0700BD55E8 /* StoryMakeSelectColorFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakeSelectColorFooterView.m; sourceTree = "<group>"; };
+		13DBAF0024E68A0700BD55E8 /* StoryMakeStickerColorFootSingleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakeStickerColorFootSingleViewController.h; sourceTree = "<group>"; };
+		13DBAF0124E68A0700BD55E8 /* StoryMakeStickerColorFootCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakeStickerColorFootCollectionViewCell.m; sourceTree = "<group>"; };
+		13DBAF0224E68A0700BD55E8 /* StoryMakeStickerLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakeStickerLabelView.m; sourceTree = "<group>"; };
+		13DBAF0324E68A0700BD55E8 /* StoryMakeSelectColorFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakeSelectColorFooterView.h; sourceTree = "<group>"; };
+		13DBAF0424E68A0700BD55E8 /* StoryMakeStickerColorFootSingleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakeStickerColorFootSingleViewController.m; sourceTree = "<group>"; };
+		13DBAF0524E68A0700BD55E8 /* StoryMakeToolsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakeToolsView.h; sourceTree = "<group>"; };
+		13DBAF0624E68A0700BD55E8 /* StoryMakeToolsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakeToolsView.m; sourceTree = "<group>"; };
+		13DBAF0824E68A0700BD55E8 /* StoryMakeStickerBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakeStickerBaseView.h; sourceTree = "<group>"; };
+		13DBAF0924E68A0700BD55E8 /* StoryMakeStickerFooterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakeStickerFooterCell.h; sourceTree = "<group>"; };
+		13DBAF0A24E68A0700BD55E8 /* StoryMakeStickerFootSingleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakeStickerFootSingleViewController.h; sourceTree = "<group>"; };
+		13DBAF0B24E68A0700BD55E8 /* StoryMakeStickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakeStickerView.m; sourceTree = "<group>"; };
+		13DBAF0C24E68A0700BD55E8 /* StoryMakeStickerImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakeStickerImageView.h; sourceTree = "<group>"; };
+		13DBAF0D24E68A0700BD55E8 /* StoryMakeStickerFooterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakeStickerFooterCell.m; sourceTree = "<group>"; };
+		13DBAF0E24E68A0700BD55E8 /* StoryMakeStickerBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakeStickerBaseView.m; sourceTree = "<group>"; };
+		13DBAF0F24E68A0700BD55E8 /* StoryMakeStickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakeStickerView.h; sourceTree = "<group>"; };
+		13DBAF1024E68A0700BD55E8 /* StoryMakeStickerFootSingleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakeStickerFootSingleViewController.m; sourceTree = "<group>"; };
+		13DBAF1124E68A0700BD55E8 /* StoryMakeStickerImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakeStickerImageView.m; sourceTree = "<group>"; };
+		13DBAF1324E68A0700BD55E8 /* StoryMakeFooterFilterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakeFooterFilterCell.h; sourceTree = "<group>"; };
+		13DBAF1424E68A0700BD55E8 /* StoryMakeFilterFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakeFilterFooterView.m; sourceTree = "<group>"; };
+		13DBAF1524E68A0700BD55E8 /* StoryMakeFooterFilterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakeFooterFilterCell.m; sourceTree = "<group>"; };
+		13DBAF1624E68A0700BD55E8 /* StoryMakeFilterFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakeFilterFooterView.h; sourceTree = "<group>"; };
+		13DBAF1824E68A0700BD55E8 /* ImageUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageUtil.m; sourceTree = "<group>"; };
+		13DBAF1924E68A0700BD55E8 /* ColorMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorMatrix.h; sourceTree = "<group>"; };
+		13DBAF1A24E68A0700BD55E8 /* ImageUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageUtil.h; sourceTree = "<group>"; };
+		13DBAF1C24E68A0700BD55E8 /* LSDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSDrawView.h; sourceTree = "<group>"; };
+		13DBAF1F24E68A0700BD55E8 /* LJBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJBaseModel.m; sourceTree = "<group>"; };
+		13DBAF2324E68A0700BD55E8 /* LJBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJBaseModel.h; sourceTree = "<group>"; };
+		13DBAF2524E68A0700BD55E8 /* LSDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSDrawView.m; sourceTree = "<group>"; };
+		13DBAF2624E68A0700BD55E8 /* StoryMakerHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakerHeader.h; sourceTree = "<group>"; };
+		13DBAF2824E68A0700BD55E8 /* CDPMonitorKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDPMonitorKeyboard.h; sourceTree = "<group>"; };
+		13DBAF2924E68A0700BD55E8 /* UIImage+imageWithColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+imageWithColor.h"; sourceTree = "<group>"; };
+		13DBAF2A24E68A0700BD55E8 /* StoryMakerFontManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakerFontManager.m; sourceTree = "<group>"; };
+		13DBAF2B24E68A0700BD55E8 /* UIImage+imageWithColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+imageWithColor.m"; sourceTree = "<group>"; };
+		13DBAF2C24E68A0700BD55E8 /* CDPMonitorKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDPMonitorKeyboard.m; sourceTree = "<group>"; };
+		13DBAF2D24E68A0700BD55E8 /* StoryMakerFontManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakerFontManager.h; sourceTree = "<group>"; };
+		13DBAF2F24E68A0700BD55E8 /* StoryMaker.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = StoryMaker.xcassets; sourceTree = "<group>"; };
 		13FC9DF224E51E460021453C /* DrawWordsAnimationLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawWordsAnimationLayer.h; sourceTree = "<group>"; };
 		13FC9DF324E51E460021453C /* DrawWordsAnimationLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawWordsAnimationLayer.m; sourceTree = "<group>"; };
 		13FC9DF624E53B8C0021453C /* DrawLightningAnimationLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawLightningAnimationLayer.h; sourceTree = "<group>"; };
@@ -436,6 +534,7 @@
 				1345CA1B24D2A7AE00FDD6E8 /* Info.plist */,
 				1345CA1C24D2A7AE00FDD6E8 /* main.m */,
 				1345CA6D24D3F5E900FDD6E8 /* AnimationRes.xcassets */,
+				13DBAED024E67A6500BD55E8 /* WeatherAnimationRes.xcassets */,
 			);
 			path = AppConfig;
 			sourceTree = "<group>";
@@ -443,6 +542,7 @@
 		1345CA2524D2A8DA00FDD6E8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				13DBAED324E688B500BD55E8 /* Lib */,
 				1345CA6F24D3FC4700FDD6E8 /* Tool */,
 				1345CA6124D2C5C000FDD6E8 /* Animation */,
 				1345CA4A24D2B16B00FDD6E8 /* Category */,
@@ -644,6 +744,7 @@
 		1345CA6F24D3FC4700FDD6E8 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				13DBAED224E6811C00BD55E8 /* Sticker */,
 				1321C12B24DC0FAB009B771C /* ColorExtractor */,
 				133B458224DAAC9300DE64CD /* DrawingBoard */,
 				13233D1224D93E7C0078113B /* IrregularityLabel */,
@@ -700,6 +801,174 @@
 				1353840324DD263B00F511B4 /* GraffitiPictureView.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		13DBAED224E6811C00BD55E8 /* Sticker */ = {
+			isa = PBXGroup;
+			children = (
+				13DBAF2E24E68A0700BD55E8 /* Resource */,
+				13DBAEF824E68A0700BD55E8 /* StoryMakerEditor */,
+				13DBAF2724E68A0700BD55E8 /* StoryMakerHelper */,
+				13DBAF2624E68A0700BD55E8 /* StoryMakerHeader.h */,
+			);
+			path = Sticker;
+			sourceTree = "<group>";
+		};
+		13DBAED324E688B500BD55E8 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				13DBAED424E689C000BD55E8 /* Masonry */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		13DBAED424E689C000BD55E8 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				13DBAED524E689C000BD55E8 /* MASCompositeConstraint.h */,
+				13DBAED624E689C000BD55E8 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				13DBAED724E689C000BD55E8 /* MASConstraint+Private.h */,
+				13DBAED824E689C000BD55E8 /* MASLayoutConstraint.h */,
+				13DBAED924E689C000BD55E8 /* NSArray+MASShorthandAdditions.h */,
+				13DBAEDA24E689C000BD55E8 /* MASConstraintMaker.h */,
+				13DBAEDB24E689C000BD55E8 /* View+MASAdditions.h */,
+				13DBAEDC24E689C000BD55E8 /* NSArray+MASAdditions.h */,
+				13DBAEDD24E689C000BD55E8 /* MASUtilities.h */,
+				13DBAEDE24E689C000BD55E8 /* MASViewAttribute.h */,
+				13DBAEDF24E689C000BD55E8 /* ViewController+MASAdditions.m */,
+				13DBAEE024E689C000BD55E8 /* MASViewConstraint.h */,
+				13DBAEE124E689C000BD55E8 /* MASConstraint.h */,
+				13DBAEE224E689C000BD55E8 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				13DBAEE324E689C000BD55E8 /* MASCompositeConstraint.m */,
+				13DBAEE424E689C000BD55E8 /* MASConstraintMaker.m */,
+				13DBAEE524E689C000BD55E8 /* MASLayoutConstraint.m */,
+				13DBAEE624E689C000BD55E8 /* NSArray+MASAdditions.m */,
+				13DBAEE724E689C000BD55E8 /* View+MASAdditions.m */,
+				13DBAEE824E689C000BD55E8 /* View+MASShorthandAdditions.h */,
+				13DBAEE924E689C000BD55E8 /* Masonry.h */,
+				13DBAEEA24E689C000BD55E8 /* MASConstraint.m */,
+				13DBAEEB24E689C000BD55E8 /* ViewController+MASAdditions.h */,
+				13DBAEEC24E689C000BD55E8 /* MASViewConstraint.m */,
+				13DBAEED24E689C000BD55E8 /* MASViewAttribute.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		13DBAEF824E68A0700BD55E8 /* StoryMakerEditor */ = {
+			isa = PBXGroup;
+			children = (
+				13DBAEF924E68A0700BD55E8 /* StoryMakeImageEditorViewController.h */,
+				13DBAEFA24E68A0700BD55E8 /* StoryMakeImageEditorViewController.m */,
+				13DBAEFB24E68A0700BD55E8 /* View */,
+			);
+			path = StoryMakerEditor;
+			sourceTree = "<group>";
+		};
+		13DBAEFB24E68A0700BD55E8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				13DBAEFC24E68A0700BD55E8 /* Write */,
+				13DBAF0524E68A0700BD55E8 /* StoryMakeToolsView.h */,
+				13DBAF0624E68A0700BD55E8 /* StoryMakeToolsView.m */,
+				13DBAF0724E68A0700BD55E8 /* Sticker */,
+				13DBAF1224E68A0700BD55E8 /* Filter */,
+				13DBAF1B24E68A0700BD55E8 /* Draw */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		13DBAEFC24E68A0700BD55E8 /* Write */ = {
+			isa = PBXGroup;
+			children = (
+				13DBAF0324E68A0700BD55E8 /* StoryMakeSelectColorFooterView.h */,
+				13DBAEFF24E68A0700BD55E8 /* StoryMakeSelectColorFooterView.m */,
+				13DBAEFD24E68A0700BD55E8 /* StoryMakeStickerColorFootCollectionViewCell.h */,
+				13DBAF0124E68A0700BD55E8 /* StoryMakeStickerColorFootCollectionViewCell.m */,
+				13DBAF0024E68A0700BD55E8 /* StoryMakeStickerColorFootSingleViewController.h */,
+				13DBAF0424E68A0700BD55E8 /* StoryMakeStickerColorFootSingleViewController.m */,
+				13DBAEFE24E68A0700BD55E8 /* StoryMakeStickerLabelView.h */,
+				13DBAF0224E68A0700BD55E8 /* StoryMakeStickerLabelView.m */,
+			);
+			path = Write;
+			sourceTree = "<group>";
+		};
+		13DBAF0724E68A0700BD55E8 /* Sticker */ = {
+			isa = PBXGroup;
+			children = (
+				13DBAF0824E68A0700BD55E8 /* StoryMakeStickerBaseView.h */,
+				13DBAF0E24E68A0700BD55E8 /* StoryMakeStickerBaseView.m */,
+				13DBAF0924E68A0700BD55E8 /* StoryMakeStickerFooterCell.h */,
+				13DBAF0D24E68A0700BD55E8 /* StoryMakeStickerFooterCell.m */,
+				13DBAF0A24E68A0700BD55E8 /* StoryMakeStickerFootSingleViewController.h */,
+				13DBAF1024E68A0700BD55E8 /* StoryMakeStickerFootSingleViewController.m */,
+				13DBAF0C24E68A0700BD55E8 /* StoryMakeStickerImageView.h */,
+				13DBAF1124E68A0700BD55E8 /* StoryMakeStickerImageView.m */,
+				13DBAF0F24E68A0700BD55E8 /* StoryMakeStickerView.h */,
+				13DBAF0B24E68A0700BD55E8 /* StoryMakeStickerView.m */,
+			);
+			path = Sticker;
+			sourceTree = "<group>";
+		};
+		13DBAF1224E68A0700BD55E8 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				13DBAF1724E68A0700BD55E8 /* Helper */,
+				13DBAF1624E68A0700BD55E8 /* StoryMakeFilterFooterView.h */,
+				13DBAF1424E68A0700BD55E8 /* StoryMakeFilterFooterView.m */,
+				13DBAF1324E68A0700BD55E8 /* StoryMakeFooterFilterCell.h */,
+				13DBAF1524E68A0700BD55E8 /* StoryMakeFooterFilterCell.m */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		13DBAF1724E68A0700BD55E8 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				13DBAF1924E68A0700BD55E8 /* ColorMatrix.h */,
+				13DBAF1A24E68A0700BD55E8 /* ImageUtil.h */,
+				13DBAF1824E68A0700BD55E8 /* ImageUtil.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		13DBAF1B24E68A0700BD55E8 /* Draw */ = {
+			isa = PBXGroup;
+			children = (
+				13DBAF1C24E68A0700BD55E8 /* LSDrawView.h */,
+				13DBAF2524E68A0700BD55E8 /* LSDrawView.m */,
+				13DBAF1D24E68A0700BD55E8 /* YYModel */,
+			);
+			path = Draw;
+			sourceTree = "<group>";
+		};
+		13DBAF1D24E68A0700BD55E8 /* YYModel */ = {
+			isa = PBXGroup;
+			children = (
+				13DBAF2324E68A0700BD55E8 /* LJBaseModel.h */,
+				13DBAF1F24E68A0700BD55E8 /* LJBaseModel.m */,
+			);
+			path = YYModel;
+			sourceTree = "<group>";
+		};
+		13DBAF2724E68A0700BD55E8 /* StoryMakerHelper */ = {
+			isa = PBXGroup;
+			children = (
+				13DBAF2824E68A0700BD55E8 /* CDPMonitorKeyboard.h */,
+				13DBAF2C24E68A0700BD55E8 /* CDPMonitorKeyboard.m */,
+				13DBAF2D24E68A0700BD55E8 /* StoryMakerFontManager.h */,
+				13DBAF2A24E68A0700BD55E8 /* StoryMakerFontManager.m */,
+				13DBAF2924E68A0700BD55E8 /* UIImage+imageWithColor.h */,
+				13DBAF2B24E68A0700BD55E8 /* UIImage+imageWithColor.m */,
+			);
+			path = StoryMakerHelper;
+			sourceTree = "<group>";
+		};
+		13DBAF2E24E68A0700BD55E8 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				13DBAF2F24E68A0700BD55E8 /* StoryMaker.xcassets */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		13FC9DF124E5183D0021453C /* DrawWordsAnimation */ = {
@@ -802,6 +1071,8 @@
 				1321C0FF24DBAA29009B771C /* DrawingBoardViewController.xib in Resources */,
 				1345CA6C24D3F57900FDD6E8 /* AnimationBookViewController.xib in Resources */,
 				1345CA4324D2B03B00FDD6E8 /* AnimationBaseViewController.xib in Resources */,
+				13DBAF4524E68A0800BD55E8 /* StoryMaker.xcassets in Resources */,
+				13DBAED124E67A6500BD55E8 /* WeatherAnimationRes.xcassets in Resources */,
 				135383FA24DD259E00F511B4 /* GraffitiPictureViewController.xib in Resources */,
 				1345CA1724D2A7AE00FDD6E8 /* Assets.xcassets in Resources */,
 				1345CA4924D2B08100FDD6E8 /* AnimationStartViewController.xib in Resources */,
@@ -862,50 +1133,79 @@
 			files = (
 				1345CA4D24D2B18000FDD6E8 /* UIViewController+Navigation.m in Sources */,
 				135383EE24DCFDD000F511B4 /* DrawingStroke.m in Sources */,
+				13DBAEEF24E689C000BD55E8 /* ViewController+MASAdditions.m in Sources */,
 				13233D0324D7E6820078113B /* ShiningLabel.m in Sources */,
 				1321C12A24DBF285009B771C /* ColorValueView.m in Sources */,
 				13233D0D24D810630078113B /* TapLabel.m in Sources */,
 				1345CA3424D2ABD000FDD6E8 /* AnimationMainViewModel.m in Sources */,
 				13233D1124D937EB0078113B /* AnimationBookVM.m in Sources */,
+				13DBAEEE24E689C000BD55E8 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				13FC9DF424E51E460021453C /* DrawWordsAnimationLayer.m in Sources */,
+				13DBAF3524E68A0700BD55E8 /* StoryMakeToolsView.m in Sources */,
+				13DBAEF024E689C000BD55E8 /* MASCompositeConstraint.m in Sources */,
+				13DBAF3E24E68A0700BD55E8 /* LJBaseModel.m in Sources */,
 				1353840224DD262D00F511B4 /* GraffitiPictureView.m in Sources */,
+				13DBAF3124E68A0700BD55E8 /* StoryMakeSelectColorFooterView.m in Sources */,
+				13DBAF3224E68A0700BD55E8 /* StoryMakeStickerColorFootCollectionViewCell.m in Sources */,
 				1345CA6B24D3F57900FDD6E8 /* AnimationBookViewController.m in Sources */,
 				1345CA4224D2B03B00FDD6E8 /* AnimationBaseViewController.m in Sources */,
 				1345CA5024D2B18C00FDD6E8 /* UINavigationController+NavigationBar.m in Sources */,
 				135383FE24DD25C600F511B4 /* GraffitiPictureVM.m in Sources */,
+				13DBAF4224E68A0700BD55E8 /* StoryMakerFontManager.m in Sources */,
 				13233D1F24D94C610078113B /* SnowAnimationView.m in Sources */,
 				1345CA2B24D2A99B00FDD6E8 /* AnimationMainViewController.m in Sources */,
 				1345CA3924D2AC5B00FDD6E8 /* AnimationBaseNavViewController.m in Sources */,
 				1321C11C24DBDD04009B771C /* BrushWidthSliderView.m in Sources */,
+				13DBAEF524E689C000BD55E8 /* MASConstraint.m in Sources */,
 				1321C10924DBAC86009B771C /* AppDelegate+SystemObserver.m in Sources */,
+				13DBAEF124E689C000BD55E8 /* MASConstraintMaker.m in Sources */,
+				13DBAF3724E68A0700BD55E8 /* StoryMakeStickerFooterCell.m in Sources */,
+				13DBAF3324E68A0700BD55E8 /* StoryMakeStickerLabelView.m in Sources */,
 				1345CA0C24D2A7AB00FDD6E8 /* AppDelegate.m in Sources */,
 				1345CA5624D2B2BA00FDD6E8 /* NSString+Extension.m in Sources */,
 				1345CA5D24D2BCB900FDD6E8 /* UIViewController+Transition.m in Sources */,
 				1345CA3124D2ABB100FDD6E8 /* AnimationBaseViewModel.m in Sources */,
 				1321C12124DBEB88009B771C /* ColorExtractorView.m in Sources */,
 				1345CA6024D2C43200FDD6E8 /* UIViewController+BookCoverAnimation.m in Sources */,
+				13DBAEF724E689C000BD55E8 /* MASViewAttribute.m in Sources */,
+				13DBAEF324E689C000BD55E8 /* NSArray+MASAdditions.m in Sources */,
+				13DBAEF424E689C000BD55E8 /* View+MASAdditions.m in Sources */,
+				13DBAEF224E689C000BD55E8 /* MASLayoutConstraint.m in Sources */,
 				135383F924DD259E00F511B4 /* GraffitiPictureViewController.m in Sources */,
+				13DBAF3D24E68A0700BD55E8 /* ImageUtil.m in Sources */,
 				1321C11324DBB0BC009B771C /* DrawingBoardVM.m in Sources */,
+				13DBAF3624E68A0700BD55E8 /* StoryMakeStickerView.m in Sources */,
 				1345CA7324D3FC6700FDD6E8 /* EGLSGlobalGCDTimer.m in Sources */,
+				13DBAF3824E68A0700BD55E8 /* StoryMakeStickerBaseView.m in Sources */,
 				1321C0FE24DBAA29009B771C /* DrawingBoardViewController.m in Sources */,
 				133B457D24DA9DEE00DE64CD /* CherryTreeAnimationView.m in Sources */,
 				135383F124DD0B9700F511B4 /* DrawingBoardImageView.m in Sources */,
+				13DBAF3924E68A0700BD55E8 /* StoryMakeStickerFootSingleViewController.m in Sources */,
 				13233D0924D804CA0078113B /* AnimationStartVM.m in Sources */,
 				1321C12724DBEBFD009B771C /* UIView+Animation.m in Sources */,
 				1321C10524DBAABB009B771C /* UIApplication+TopController.m in Sources */,
+				13DBAF3A24E68A0700BD55E8 /* StoryMakeStickerImageView.m in Sources */,
 				1321C11724DBB1AE009B771C /* DrawingBoardView.m in Sources */,
+				13DBAF3024E68A0700BD55E8 /* StoryMakeImageEditorViewController.m in Sources */,
 				1321C10E24DBAE91009B771C /* NSObject+Observer.m in Sources */,
 				13233D1524D93EAE0078113B /* IrregularityLabel.m in Sources */,
 				133B458524DAACB900DE64CD /* DrawingBoardCanvasView.m in Sources */,
+				13DBAF4324E68A0800BD55E8 /* UIImage+imageWithColor.m in Sources */,
+				13DBAEF624E689C000BD55E8 /* MASViewConstraint.m in Sources */,
 				13FC9DF824E53B8C0021453C /* DrawLightningAnimationLayer.m in Sources */,
+				13DBAF3C24E68A0700BD55E8 /* StoryMakeFooterFilterCell.m in Sources */,
 				13233CFE24D7AD3F0078113B /* IrregularityTextContainer.m in Sources */,
 				1321C12E24DCF1E0009B771C /* BrushColorView.m in Sources */,
+				13DBAF3424E68A0700BD55E8 /* StoryMakeStickerColorFootSingleViewController.m in Sources */,
+				13DBAF3B24E68A0700BD55E8 /* StoryMakeFilterFooterView.m in Sources */,
 				1345CA6524D2C5F200FDD6E8 /* BookAnimationObject.m in Sources */,
 				1321C10224DBAA84009B771C /* UIViewController+VCJump.m in Sources */,
+				13DBAF4424E68A0800BD55E8 /* CDPMonitorKeyboard.m in Sources */,
 				133B458124DAA15F00DE64CD /* AnimationBaseView.m in Sources */,
 				1345CA5324D2B22600FDD6E8 /* UIButton+CustomBtn.m in Sources */,
 				1345CA4824D2B08100FDD6E8 /* AnimationStartViewController.m in Sources */,
 				1345CA1D24D2A7AE00FDD6E8 /* main.m in Sources */,
+				13DBAF4124E68A0700BD55E8 /* LSDrawView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

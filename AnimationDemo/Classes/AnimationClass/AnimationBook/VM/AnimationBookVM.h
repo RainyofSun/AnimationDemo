@@ -31,6 +31,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (DrawWordsAnimationLayer *)setupWordsAnimation:(NSString *)animationText;
 /// 创建闪电动画
 - (void)setupLightningAnimation:(UIView *)animationView;
+/// 美图贴纸
+- (void)stickerVC:(UIViewController *)vc;
 
 @end
 
