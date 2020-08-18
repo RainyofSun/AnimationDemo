@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13209A5B24EA2DB80067C616 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13209A5924EA2DB80067C616 /* TestViewController.m */; };
+		13209A5C24EA2DB80067C616 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13209A5A24EA2DB80067C616 /* TestViewController.xib */; };
+		13209A6124EA608B0067C616 /* WeatherAnimationBaseLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 13209A6024EA608B0067C616 /* WeatherAnimationBaseLayer.m */; };
+		13209A6824EA61130067C616 /* WeatherSunAnimationLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 13209A6724EA61130067C616 /* WeatherSunAnimationLayer.m */; };
+		13209A6E24EA61A10067C616 /* WeatherAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13209A6C24EA61A10067C616 /* WeatherAnimationViewController.m */; };
+		13209A6F24EA61A10067C616 /* WeatherAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13209A6D24EA61A10067C616 /* WeatherAnimationViewController.xib */; };
+		13209A7324EA61BC0067C616 /* WeatherAnimationVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 13209A7224EA61BC0067C616 /* WeatherAnimationVM.m */; };
+		13209A7724EA62CC0067C616 /* WeatherAnimationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 13209A7624EA62CC0067C616 /* WeatherAnimationFactory.m */; };
 		1321C0FE24DBAA29009B771C /* DrawingBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1321C0FC24DBAA29009B771C /* DrawingBoardViewController.m */; };
 		1321C0FF24DBAA29009B771C /* DrawingBoardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1321C0FD24DBAA29009B771C /* DrawingBoardViewController.xib */; };
 		1321C10224DBAA84009B771C /* UIViewController+VCJump.m in Sources */ = {isa = PBXBuildFile; fileRef = 1321C10124DBAA84009B771C /* UIViewController+VCJump.m */; };
@@ -29,6 +37,10 @@
 		13233D1124D937EB0078113B /* AnimationBookVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 13233D1024D937EB0078113B /* AnimationBookVM.m */; };
 		13233D1524D93EAE0078113B /* IrregularityLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 13233D1424D93EAE0078113B /* IrregularityLabel.m */; };
 		13233D1F24D94C610078113B /* SnowAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13233D1E24D94C610078113B /* SnowAnimationView.m */; };
+		132D63E924EB885A005C7BA3 /* WeatherCloudAnimationLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 132D63E824EB885A005C7BA3 /* WeatherCloudAnimationLayer.m */; };
+		132D63ED24EBB8C2005C7BA3 /* WeatherRainAnimationLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 132D63EC24EBB8C2005C7BA3 /* WeatherRainAnimationLayer.m */; };
+		132D63F124EBBF75005C7BA3 /* WeatherThrunderAnimationLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 132D63F024EBBF75005C7BA3 /* WeatherThrunderAnimationLayer.m */; };
+		132D63F524EBCA47005C7BA3 /* WeatherSnowAnimationLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 132D63F424EBCA47005C7BA3 /* WeatherSnowAnimationLayer.m */; };
 		133B457D24DA9DEE00DE64CD /* CherryTreeAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 133B457C24DA9DEE00DE64CD /* CherryTreeAnimationView.m */; };
 		133B458124DAA15F00DE64CD /* AnimationBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 133B458024DAA15F00DE64CD /* AnimationBaseView.m */; };
 		133B458524DAACB900DE64CD /* DrawingBoardCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 133B458424DAACB900DE64CD /* DrawingBoardCanvasView.m */; };
@@ -100,6 +112,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13209A5824EA2DB80067C616 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		13209A5924EA2DB80067C616 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		13209A5A24EA2DB80067C616 /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		13209A5F24EA608B0067C616 /* WeatherAnimationBaseLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherAnimationBaseLayer.h; sourceTree = "<group>"; };
+		13209A6024EA608B0067C616 /* WeatherAnimationBaseLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherAnimationBaseLayer.m; sourceTree = "<group>"; };
+		13209A6624EA61130067C616 /* WeatherSunAnimationLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherSunAnimationLayer.h; sourceTree = "<group>"; };
+		13209A6724EA61130067C616 /* WeatherSunAnimationLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherSunAnimationLayer.m; sourceTree = "<group>"; };
+		13209A6B24EA61A10067C616 /* WeatherAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherAnimationViewController.h; sourceTree = "<group>"; };
+		13209A6C24EA61A10067C616 /* WeatherAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherAnimationViewController.m; sourceTree = "<group>"; };
+		13209A6D24EA61A10067C616 /* WeatherAnimationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherAnimationViewController.xib; sourceTree = "<group>"; };
+		13209A7124EA61BC0067C616 /* WeatherAnimationVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherAnimationVM.h; sourceTree = "<group>"; };
+		13209A7224EA61BC0067C616 /* WeatherAnimationVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherAnimationVM.m; sourceTree = "<group>"; };
+		13209A7524EA62CC0067C616 /* WeatherAnimationFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherAnimationFactory.h; sourceTree = "<group>"; };
+		13209A7624EA62CC0067C616 /* WeatherAnimationFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherAnimationFactory.m; sourceTree = "<group>"; };
+		13209A7824EA67800067C616 /* WeatherAnimationHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherAnimationHeader.h; sourceTree = "<group>"; };
 		1321C0FB24DBAA29009B771C /* DrawingBoardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawingBoardViewController.h; sourceTree = "<group>"; };
 		1321C0FC24DBAA29009B771C /* DrawingBoardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawingBoardViewController.m; sourceTree = "<group>"; };
 		1321C0FD24DBAA29009B771C /* DrawingBoardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrawingBoardViewController.xib; sourceTree = "<group>"; };
@@ -142,6 +169,14 @@
 		13233D1424D93EAE0078113B /* IrregularityLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IrregularityLabel.m; sourceTree = "<group>"; };
 		13233D1D24D94C610078113B /* SnowAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SnowAnimationView.h; sourceTree = "<group>"; };
 		13233D1E24D94C610078113B /* SnowAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnowAnimationView.m; sourceTree = "<group>"; };
+		132D63E724EB885A005C7BA3 /* WeatherCloudAnimationLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherCloudAnimationLayer.h; sourceTree = "<group>"; };
+		132D63E824EB885A005C7BA3 /* WeatherCloudAnimationLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherCloudAnimationLayer.m; sourceTree = "<group>"; };
+		132D63EB24EBB8C2005C7BA3 /* WeatherRainAnimationLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherRainAnimationLayer.h; sourceTree = "<group>"; };
+		132D63EC24EBB8C2005C7BA3 /* WeatherRainAnimationLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherRainAnimationLayer.m; sourceTree = "<group>"; };
+		132D63EF24EBBF75005C7BA3 /* WeatherThrunderAnimationLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherThrunderAnimationLayer.h; sourceTree = "<group>"; };
+		132D63F024EBBF75005C7BA3 /* WeatherThrunderAnimationLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherThrunderAnimationLayer.m; sourceTree = "<group>"; };
+		132D63F324EBCA47005C7BA3 /* WeatherSnowAnimationLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherSnowAnimationLayer.h; sourceTree = "<group>"; };
+		132D63F424EBCA47005C7BA3 /* WeatherSnowAnimationLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherSnowAnimationLayer.m; sourceTree = "<group>"; };
 		133B457B24DA9DEE00DE64CD /* CherryTreeAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CherryTreeAnimationView.h; sourceTree = "<group>"; };
 		133B457C24DA9DEE00DE64CD /* CherryTreeAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CherryTreeAnimationView.m; sourceTree = "<group>"; };
 		133B457F24DAA15F00DE64CD /* AnimationBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationBaseView.h; sourceTree = "<group>"; };
@@ -293,6 +328,86 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13209A5724EA2D9A0067C616 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				13209A5824EA2DB80067C616 /* TestViewController.h */,
+				13209A5924EA2DB80067C616 /* TestViewController.m */,
+				13209A5A24EA2DB80067C616 /* TestViewController.xib */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		13209A5D24EA60510067C616 /* WeatherAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				13209A7424EA62A50067C616 /* Manager */,
+				132D63F224EBCA20005C7BA3 /* Snow */,
+				132D63EE24EBBF48005C7BA3 /* Thunder */,
+				132D63EA24EBB88D005C7BA3 /* Rain */,
+				132D63E624EB87F1005C7BA3 /* Cloud */,
+				13209A6224EA60AC0067C616 /* Sun */,
+				13209A5E24EA60650067C616 /* Base */,
+			);
+			path = WeatherAnimation;
+			sourceTree = "<group>";
+		};
+		13209A5E24EA60650067C616 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				13209A5F24EA608B0067C616 /* WeatherAnimationBaseLayer.h */,
+				13209A6024EA608B0067C616 /* WeatherAnimationBaseLayer.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		13209A6224EA60AC0067C616 /* Sun */ = {
+			isa = PBXGroup;
+			children = (
+				13209A6624EA61130067C616 /* WeatherSunAnimationLayer.h */,
+				13209A6724EA61130067C616 /* WeatherSunAnimationLayer.m */,
+			);
+			path = Sun;
+			sourceTree = "<group>";
+		};
+		13209A6924EA61770067C616 /* WeatherAnimationClass */ = {
+			isa = PBXGroup;
+			children = (
+				13209A7024EA61A40067C616 /* VM */,
+				13209A6A24EA618A0067C616 /* VC */,
+			);
+			path = WeatherAnimationClass;
+			sourceTree = "<group>";
+		};
+		13209A6A24EA618A0067C616 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				13209A6B24EA61A10067C616 /* WeatherAnimationViewController.h */,
+				13209A6C24EA61A10067C616 /* WeatherAnimationViewController.m */,
+				13209A6D24EA61A10067C616 /* WeatherAnimationViewController.xib */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		13209A7024EA61A40067C616 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				13209A7124EA61BC0067C616 /* WeatherAnimationVM.h */,
+				13209A7224EA61BC0067C616 /* WeatherAnimationVM.m */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		13209A7424EA62A50067C616 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				13209A7524EA62CC0067C616 /* WeatherAnimationFactory.h */,
+				13209A7624EA62CC0067C616 /* WeatherAnimationFactory.m */,
+				13209A7824EA67800067C616 /* WeatherAnimationHeader.h */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		1321C0FA24DBA9F7009B771C /* DrawBoardClass */ = {
 			isa = PBXGroup;
 			children = (
@@ -458,6 +573,42 @@
 			path = SnowAnimation;
 			sourceTree = "<group>";
 		};
+		132D63E624EB87F1005C7BA3 /* Cloud */ = {
+			isa = PBXGroup;
+			children = (
+				132D63E724EB885A005C7BA3 /* WeatherCloudAnimationLayer.h */,
+				132D63E824EB885A005C7BA3 /* WeatherCloudAnimationLayer.m */,
+			);
+			path = Cloud;
+			sourceTree = "<group>";
+		};
+		132D63EA24EBB88D005C7BA3 /* Rain */ = {
+			isa = PBXGroup;
+			children = (
+				132D63EB24EBB8C2005C7BA3 /* WeatherRainAnimationLayer.h */,
+				132D63EC24EBB8C2005C7BA3 /* WeatherRainAnimationLayer.m */,
+			);
+			path = Rain;
+			sourceTree = "<group>";
+		};
+		132D63EE24EBBF48005C7BA3 /* Thunder */ = {
+			isa = PBXGroup;
+			children = (
+				132D63EF24EBBF75005C7BA3 /* WeatherThrunderAnimationLayer.h */,
+				132D63F024EBBF75005C7BA3 /* WeatherThrunderAnimationLayer.m */,
+			);
+			path = Thunder;
+			sourceTree = "<group>";
+		};
+		132D63F224EBCA20005C7BA3 /* Snow */ = {
+			isa = PBXGroup;
+			children = (
+				132D63F324EBCA47005C7BA3 /* WeatherSnowAnimationLayer.h */,
+				132D63F424EBCA47005C7BA3 /* WeatherSnowAnimationLayer.m */,
+			);
+			path = Snow;
+			sourceTree = "<group>";
+		};
 		133B457A24DA9DC500DE64CD /* CherryTreeAnimation */ = {
 			isa = PBXGroup;
 			children = (
@@ -542,10 +693,12 @@
 		1345CA2524D2A8DA00FDD6E8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				13209A5724EA2D9A0067C616 /* Test */,
 				13DBAED324E688B500BD55E8 /* Lib */,
 				1345CA6F24D3FC4700FDD6E8 /* Tool */,
 				1345CA6124D2C5C000FDD6E8 /* Animation */,
 				1345CA4A24D2B16B00FDD6E8 /* Category */,
+				13209A6924EA61770067C616 /* WeatherAnimationClass */,
 				135383F424DD256700F511B4 /* GraffitiPictureClass */,
 				1321C0FA24DBA9F7009B771C /* DrawBoardClass */,
 				1345CA4424D2B05000FDD6E8 /* AnimationClass */,
@@ -704,6 +857,7 @@
 		1345CA6124D2C5C000FDD6E8 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				13209A5D24EA60510067C616 /* WeatherAnimation */,
 				13FC9DF524E53B380021453C /* DrawLightningAnimation */,
 				13FC9DF124E5183D0021453C /* DrawWordsAnimation */,
 				133B457A24DA9DC500DE64CD /* CherryTreeAnimation */,
@@ -1066,6 +1220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1345CA2C24D2A99B00FDD6E8 /* AnimationMainViewController.xib in Resources */,
+				13209A5C24EA2DB80067C616 /* TestViewController.xib in Resources */,
 				1345CA1A24D2A7AE00FDD6E8 /* LaunchScreen.storyboard in Resources */,
 				1321C11924DBB1BD009B771C /* DrawingBoardView.xib in Resources */,
 				1321C0FF24DBAA29009B771C /* DrawingBoardViewController.xib in Resources */,
@@ -1074,6 +1229,7 @@
 				13DBAF4524E68A0800BD55E8 /* StoryMaker.xcassets in Resources */,
 				13DBAED124E67A6500BD55E8 /* WeatherAnimationRes.xcassets in Resources */,
 				135383FA24DD259E00F511B4 /* GraffitiPictureViewController.xib in Resources */,
+				13209A6F24EA61A10067C616 /* WeatherAnimationViewController.xib in Resources */,
 				1345CA1724D2A7AE00FDD6E8 /* Assets.xcassets in Resources */,
 				1345CA4924D2B08100FDD6E8 /* AnimationStartViewController.xib in Resources */,
 				1345CA6E24D3F5E900FDD6E8 /* AnimationRes.xcassets in Resources */,
@@ -1133,12 +1289,16 @@
 			files = (
 				1345CA4D24D2B18000FDD6E8 /* UIViewController+Navigation.m in Sources */,
 				135383EE24DCFDD000F511B4 /* DrawingStroke.m in Sources */,
+				13209A7724EA62CC0067C616 /* WeatherAnimationFactory.m in Sources */,
+				13209A7324EA61BC0067C616 /* WeatherAnimationVM.m in Sources */,
 				13DBAEEF24E689C000BD55E8 /* ViewController+MASAdditions.m in Sources */,
+				13209A6124EA608B0067C616 /* WeatherAnimationBaseLayer.m in Sources */,
 				13233D0324D7E6820078113B /* ShiningLabel.m in Sources */,
 				1321C12A24DBF285009B771C /* ColorValueView.m in Sources */,
 				13233D0D24D810630078113B /* TapLabel.m in Sources */,
 				1345CA3424D2ABD000FDD6E8 /* AnimationMainViewModel.m in Sources */,
 				13233D1124D937EB0078113B /* AnimationBookVM.m in Sources */,
+				132D63F124EBBF75005C7BA3 /* WeatherThrunderAnimationLayer.m in Sources */,
 				13DBAEEE24E689C000BD55E8 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				13FC9DF424E51E460021453C /* DrawWordsAnimationLayer.m in Sources */,
 				13DBAF3524E68A0700BD55E8 /* StoryMakeToolsView.m in Sources */,
@@ -1151,6 +1311,7 @@
 				1345CA4224D2B03B00FDD6E8 /* AnimationBaseViewController.m in Sources */,
 				1345CA5024D2B18C00FDD6E8 /* UINavigationController+NavigationBar.m in Sources */,
 				135383FE24DD25C600F511B4 /* GraffitiPictureVM.m in Sources */,
+				132D63E924EB885A005C7BA3 /* WeatherCloudAnimationLayer.m in Sources */,
 				13DBAF4224E68A0700BD55E8 /* StoryMakerFontManager.m in Sources */,
 				13233D1F24D94C610078113B /* SnowAnimationView.m in Sources */,
 				1345CA2B24D2A99B00FDD6E8 /* AnimationMainViewController.m in Sources */,
@@ -1161,6 +1322,7 @@
 				13DBAEF124E689C000BD55E8 /* MASConstraintMaker.m in Sources */,
 				13DBAF3724E68A0700BD55E8 /* StoryMakeStickerFooterCell.m in Sources */,
 				13DBAF3324E68A0700BD55E8 /* StoryMakeStickerLabelView.m in Sources */,
+				13209A5B24EA2DB80067C616 /* TestViewController.m in Sources */,
 				1345CA0C24D2A7AB00FDD6E8 /* AppDelegate.m in Sources */,
 				1345CA5624D2B2BA00FDD6E8 /* NSString+Extension.m in Sources */,
 				1345CA5D24D2BCB900FDD6E8 /* UIViewController+Transition.m in Sources */,
@@ -1173,6 +1335,7 @@
 				13DBAEF224E689C000BD55E8 /* MASLayoutConstraint.m in Sources */,
 				135383F924DD259E00F511B4 /* GraffitiPictureViewController.m in Sources */,
 				13DBAF3D24E68A0700BD55E8 /* ImageUtil.m in Sources */,
+				13209A6824EA61130067C616 /* WeatherSunAnimationLayer.m in Sources */,
 				1321C11324DBB0BC009B771C /* DrawingBoardVM.m in Sources */,
 				13DBAF3624E68A0700BD55E8 /* StoryMakeStickerView.m in Sources */,
 				1345CA7324D3FC6700FDD6E8 /* EGLSGlobalGCDTimer.m in Sources */,
@@ -1197,10 +1360,13 @@
 				13233CFE24D7AD3F0078113B /* IrregularityTextContainer.m in Sources */,
 				1321C12E24DCF1E0009B771C /* BrushColorView.m in Sources */,
 				13DBAF3424E68A0700BD55E8 /* StoryMakeStickerColorFootSingleViewController.m in Sources */,
+				132D63F524EBCA47005C7BA3 /* WeatherSnowAnimationLayer.m in Sources */,
 				13DBAF3B24E68A0700BD55E8 /* StoryMakeFilterFooterView.m in Sources */,
+				13209A6E24EA61A10067C616 /* WeatherAnimationViewController.m in Sources */,
 				1345CA6524D2C5F200FDD6E8 /* BookAnimationObject.m in Sources */,
 				1321C10224DBAA84009B771C /* UIViewController+VCJump.m in Sources */,
 				13DBAF4424E68A0800BD55E8 /* CDPMonitorKeyboard.m in Sources */,
+				132D63ED24EBB8C2005C7BA3 /* WeatherRainAnimationLayer.m in Sources */,
 				133B458124DAA15F00DE64CD /* AnimationBaseView.m in Sources */,
 				1345CA5324D2B22600FDD6E8 /* UIButton+CustomBtn.m in Sources */,
 				1345CA4824D2B08100FDD6E8 /* AnimationStartViewController.m in Sources */,

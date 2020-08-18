@@ -43,4 +43,16 @@
     return shiningLab;
 }
 
+- (TapLabel *)setupTestLab:(UIViewController *)vc {
+    TapLabel *tempLab = [[TapLabel alloc] initWithFrame:CGRectMake(10, 150, 80, 40)];
+    tempLab.backgroundColor = [UIColor yellowColor];
+    tempLab.numberOfLines = 0;
+    UIFont *attributeFont = [UIFont systemFontOfSize:18];
+    NSMutableAttributedString *tempAttribute0 = [[NSMutableAttributedString alloc] initWithString:@"测试\n" attributes:@{NSFontAttributeName:attributeFont}];
+    [tempLab addAttributedString:tempAttribute0 option:^(NSAttributedString * _Nonnull attributedString) {
+        [vc pushVC:@"TestViewController"];
+    }];
+    return tempLab;
+}
+
 @end

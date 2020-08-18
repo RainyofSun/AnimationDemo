@@ -25,6 +25,10 @@
     return self;
 }
 
+- (void)dealloc {
+    NSLog(@"DELLOC : %@",NSStringFromClass(self.class));
+}
+
 - (void)configureView
 {
     [self.contentView addSubview:self.imageView];

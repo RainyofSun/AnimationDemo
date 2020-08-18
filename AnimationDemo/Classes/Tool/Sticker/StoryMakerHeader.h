@@ -4,7 +4,7 @@
 //
 //  Created by whbalzac on 12/08/2017.
 //  Copyright © 2017 whbalzac. All rights reserved.
-//
+//  TODO: 滤镜图片的处理内存会增长
 
 #ifndef StoryMakerHeader_h
 #define StoryMakerHeader_h

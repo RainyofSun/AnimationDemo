@@ -21,7 +21,7 @@
 
 @property (nonatomic, strong) UICollectionView   *collectionView;
 @property (nonatomic, strong) UICollectionViewFlowLayout *flowLayout;
-@property (nonatomic, strong) NSArray <UIImage *> *dataArray;
+@property (nonatomic, strong) NSMutableArray <UIImage *> *dataArray;
 @property (nonatomic, strong) NSArray <NSString *> *filterNameArray;
 
 @end
@@ -35,6 +35,10 @@
         [self configureView];
     }
     return self;
+}
+
+- (void)dealloc {
+    NSLog(@"DELLOC : %@",NSStringFromClass(self.class));
 }
 
 - (void)configureView
@@ -71,20 +75,20 @@
 {
     self.filterNameArray = [NSArray arrayWithObjects:@"Normal", @"LOMO", @"黑白", @"哥特", @"复古", @"锐化", @"淡雅", @"酒红", @"清宁", @"浪漫", @"光晕", @"蓝调", @"梦幻", @"夜色",nil];
     
-    self.dataArray = @[image,
-                       [ImageUtil imageWithImage:image withColorMatrix:colormatrix_lomo],
-                       [ImageUtil imageWithImage:image withColorMatrix:colormatrix_heibai],
-                       [ImageUtil imageWithImage:image withColorMatrix:colormatrix_huajiu],
-                       [ImageUtil imageWithImage:image withColorMatrix:colormatrix_gete],
-                       [ImageUtil imageWithImage:image withColorMatrix:colormatrix_ruise],
-                       [ImageUtil imageWithImage:image withColorMatrix:colormatrix_danya],
-                       [ImageUtil imageWithImage:image withColorMatrix:colormatrix_jiuhong],
-                       [ImageUtil imageWithImage:image withColorMatrix:colormatrix_qingning],
-                       [ImageUtil imageWithImage:image withColorMatrix:colormatrix_langman],
-                       [ImageUtil imageWithImage:image withColorMatrix:colormatrix_guangyun],
-                       [ImageUtil imageWithImage:image withColorMatrix:colormatrix_landiao],
-                       [ImageUtil imageWithImage:image withColorMatrix:colormatrix_menghuan],
-                       [ImageUtil imageWithImage:image withColorMatrix:colormatrix_yese]];
+    self.dataArray = [NSMutableArray arrayWithArray:@[image,
+                                                    [ImageUtil imageWithImage:image withColorMatrix:colormatrix_lomo],
+                                                    [ImageUtil imageWithImage:image withColorMatrix:colormatrix_heibai],
+                                                    [ImageUtil imageWithImage:image withColorMatrix:colormatrix_huajiu],
+                                                    [ImageUtil imageWithImage:image withColorMatrix:colormatrix_gete],
+                                                    [ImageUtil imageWithImage:image withColorMatrix:colormatrix_ruise],
+                                                    [ImageUtil imageWithImage:image withColorMatrix:colormatrix_danya],
+                                                    [ImageUtil imageWithImage:image withColorMatrix:colormatrix_jiuhong],
+                                                    [ImageUtil imageWithImage:image withColorMatrix:colormatrix_qingning],
+                                                    [ImageUtil imageWithImage:image withColorMatrix:colormatrix_langman],
+                                                    [ImageUtil imageWithImage:image withColorMatrix:colormatrix_guangyun],
+                                                    [ImageUtil imageWithImage:image withColorMatrix:colormatrix_landiao],
+                                                    [ImageUtil imageWithImage:image withColorMatrix:colormatrix_menghuan],
+                                                    [ImageUtil imageWithImage:image withColorMatrix:colormatrix_yese]]];
     
 }
 
@@ -93,6 +97,10 @@
     self.drawImgView.image = image;
     [self configureData:image];
     [self.collectionView reloadData];
+}
+
+- (void)removeMemmoryImgCache {
+    [self.dataArray removeAllObjects];
 }
 
 #pragma mark -
@@ -134,6 +142,7 @@
 - (void)cancelBtnAction
 {
     if (self.delegate && [self.delegate respondsToSelector:@selector(storyMakeFilterFooterViewCloseBtnClicked)]) {
+        [self removeMemmoryImgCache];
         [self.delegate storyMakeFilterFooterViewCloseBtnClicked];
     }
 }
@@ -141,6 +150,7 @@
 - (void)confirmBtnAction
 {
     if (self.delegate && [self.delegate respondsToSelector:@selector(storyMakeFilterFooterViewConfirmBtnClicked:)]) {
+        [self removeMemmoryImgCache];
         [self.delegate storyMakeFilterFooterViewConfirmBtnClicked:self.drawImgView.image];
     }
 }
