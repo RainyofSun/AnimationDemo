@@ -7,6 +7,7 @@
 //
 
 #import "AnimationBaseViewModel.h"
+#import "TapLabel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -18,6 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setupBookAnimation:(UIImageView *)coverView animationVC:(UIViewController *)animationVC;
 /// 创建文字闪烁动画
 - (ShiningLabel *)setupShiningLabelAnimation;
+/// 创建测试后门
+- (TapLabel *)setupTestLab:(UIViewController *)vc;
 
 @end
 

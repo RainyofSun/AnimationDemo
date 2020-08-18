@@ -47,6 +47,8 @@
     
     self.shiningLab = [self.startVM setupShiningLabelAnimation];
     [self.view addSubview:self.shiningLab];
+    
+    [self.view addSubview:[self.startVM setupTestLab:self]];
 }
 
 #pragma mark - Notification

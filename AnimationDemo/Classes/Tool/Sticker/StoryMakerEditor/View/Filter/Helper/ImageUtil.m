@@ -145,7 +145,7 @@ static void changeRGBA(int *red,int *green,int *blue,int *alpha, const float* f)
 	int bitsPerPixel = 32;
 	int bytesPerRow = 4 * w;
 	CGColorSpaceRef colorSpaceRef = CGColorSpaceCreateDeviceRGB();
-	CGBitmapInfo bitmapInfo = kCGBitmapByteOrderDefault;
+	CGBitmapInfo bitmapInfo = kCGImageAlphaNoneSkipLast | kCGBitmapByteOrderDefault;
 	CGColorRenderingIntent renderingIntent = kCGRenderingIntentDefault;
 	
 	
