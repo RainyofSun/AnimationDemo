@@ -26,13 +26,18 @@ NS_ASSUME_NONNULL_BEGIN
 /// 创建下雪动画
 - (SnowAnimationView *)setupSnowAnimation;
 /// 创建樱花动画
-- (CherryTreeAnimationView *)setupCherryTreeAnimation;
+- (void)setupCherryTreeAnimation:(UIView *)animationView;
 /// 创建文字动画
 - (DrawWordsAnimationLayer *)setupWordsAnimation:(NSString *)animationText;
 /// 创建闪电动画
 - (void)setupLightningAnimation:(UIView *)animationView;
 /// 美图贴纸
 - (void)stickerVC:(UIViewController *)vc;
+
+/// 创建PoemView
+- (void)setupPoemView:(UIView *)view;
+/// 移除动画
+- (void)removeAnimationView;
 
 @end
 

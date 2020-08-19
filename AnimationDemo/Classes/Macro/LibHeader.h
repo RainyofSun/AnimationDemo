@@ -24,8 +24,10 @@
 #import "UIViewController+VCJump.h"
 #import "NSObject+Observer.h"
 #import "UIView+Animation.h"
+#import "UIView+GetSuperVc.h"
 
 // 工具文件
 #import "EGLSGlobalGCDTimer.h"
+#import "GradientColorHelper.h"
 
 #endif /* LibHeader_h */

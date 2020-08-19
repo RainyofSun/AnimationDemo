@@ -7,12 +7,15 @@
 //
 
 #import "AnimationBookViewController.h"
+#import "BubbleTransitionAnimation.h"
 #import "AnimationBookVM.h"
 
-@interface AnimationBookViewController ()<UINavigationControllerDelegate>
+@interface AnimationBookViewController ()<UINavigationControllerDelegate,CAAnimationDelegate,UIViewControllerTransitioningDelegate>
 
 /** bookVM */
 @property (nonatomic,strong) AnimationBookVM *bookVM;
+/** transition */
+@property (nonatomic,strong) BubbleTransitionAnimation *transition;
 
 @end
 
@@ -21,7 +24,46 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [self addUI];
+    [self setupBackgroud];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self.bookVM setupCherryTreeAnimation:self.view];
+    self.view.layer.contents = nil;
+    [self.bookVM setupPoemView:self.view];
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    [self.bookVM removeAnimationView];
+}
+
+#pragma mark - 消息透传
+- (void)showPoem {
+    UIViewController *vc = [[NSClassFromString(@"PoemAnimationViewController") alloc] init];
+    vc.transitioningDelegate = self;
+    vc.modalPresentationStyle = UIModalPresentationCustom;
+    vc.view.frame = self.view.frame;
+    [self presentVC:vc];
+}
+
+#pragma mark - UIViewControllerTransitioningDelegate
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
+    self.transition.transitionModel = BubbleTransitionModel_Present;
+    self.transition.startPoint = CGPointMake(self.view.center.x, ScreenHeight - 100);
+    return self.transition;
+}
+
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
+    self.transition.transitionModel = BubbleTransitionModel_Dismiss;
+    self.transition.startPoint = CGPointMake(self.view.center.x, ScreenHeight - 100);
+    return self.transition;
+}
+
+- (void)setupBackgroud {
+    self.view.layer.contents = (__bridge id)[UIImage imageNamed:@"cherrytrees"].CGImage;
+    self.view.layer.contentsGravity = kCAGravityResizeAspectFill;
 }
 
 - (void)addUI {
@@ -52,6 +94,13 @@
         _bookVM = [[AnimationBookVM alloc] init];
     }
     return _bookVM;
+}
+
+- (BubbleTransitionAnimation *)transition {
+    if (!_transition) {
+        _transition = [[BubbleTransitionAnimation alloc] init];
+    }
+    return _transition;
 }
 
 /*
