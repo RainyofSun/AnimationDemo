@@ -37,6 +37,7 @@
 #pragma mark - private methods
 - (void)cherryTreesAnimationInit {
     self.layer.contents = (id)[UIImage imageNamed:@"cherrytrees"].CGImage;
+    self.clipsToBounds = YES;
     self.layer.contentsGravity = kCAGravityResizeAspectFill;
 }
 

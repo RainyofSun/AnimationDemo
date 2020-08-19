@@ -41,6 +41,14 @@
 		132D63ED24EBB8C2005C7BA3 /* WeatherRainAnimationLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 132D63EC24EBB8C2005C7BA3 /* WeatherRainAnimationLayer.m */; };
 		132D63F124EBBF75005C7BA3 /* WeatherThrunderAnimationLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 132D63F024EBBF75005C7BA3 /* WeatherThrunderAnimationLayer.m */; };
 		132D63F524EBCA47005C7BA3 /* WeatherSnowAnimationLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 132D63F424EBCA47005C7BA3 /* WeatherSnowAnimationLayer.m */; };
+		132D63F924ECF9BE005C7BA3 /* PoemAnimationLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 132D63F824ECF9BE005C7BA3 /* PoemAnimationLayer.m */; };
+		132D63FD24ECFC89005C7BA3 /* PoemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 132D63FC24ECFC89005C7BA3 /* PoemView.m */; };
+		132D640024ED01AC005C7BA3 /* UIView+GetSuperVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 132D63FF24ED01AC005C7BA3 /* UIView+GetSuperVc.m */; };
+		132D640424ED0399005C7BA3 /* BubbleTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 132D640324ED0399005C7BA3 /* BubbleTransitionAnimation.m */; };
+		132D640A24ED079A005C7BA3 /* PoemAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 132D640824ED079A005C7BA3 /* PoemAnimationViewController.m */; };
+		132D640B24ED079A005C7BA3 /* PoemAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 132D640924ED079A005C7BA3 /* PoemAnimationViewController.xib */; };
+		132D641124ED0DBD005C7BA3 /* 1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 132D641024ED0DBD005C7BA3 /* 1.jpeg */; };
+		132D641824ED1949005C7BA3 /* GradientColorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 132D641724ED1949005C7BA3 /* GradientColorHelper.m */; };
 		133B457D24DA9DEE00DE64CD /* CherryTreeAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 133B457C24DA9DEE00DE64CD /* CherryTreeAnimationView.m */; };
 		133B458124DAA15F00DE64CD /* AnimationBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 133B458024DAA15F00DE64CD /* AnimationBaseView.m */; };
 		133B458524DAACB900DE64CD /* DrawingBoardCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 133B458424DAACB900DE64CD /* DrawingBoardCanvasView.m */; };
@@ -177,6 +185,20 @@
 		132D63F024EBBF75005C7BA3 /* WeatherThrunderAnimationLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherThrunderAnimationLayer.m; sourceTree = "<group>"; };
 		132D63F324EBCA47005C7BA3 /* WeatherSnowAnimationLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherSnowAnimationLayer.h; sourceTree = "<group>"; };
 		132D63F424EBCA47005C7BA3 /* WeatherSnowAnimationLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherSnowAnimationLayer.m; sourceTree = "<group>"; };
+		132D63F724ECF9BE005C7BA3 /* PoemAnimationLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PoemAnimationLayer.h; sourceTree = "<group>"; };
+		132D63F824ECF9BE005C7BA3 /* PoemAnimationLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PoemAnimationLayer.m; sourceTree = "<group>"; };
+		132D63FB24ECFC89005C7BA3 /* PoemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PoemView.h; sourceTree = "<group>"; };
+		132D63FC24ECFC89005C7BA3 /* PoemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PoemView.m; sourceTree = "<group>"; };
+		132D63FE24ED01AC005C7BA3 /* UIView+GetSuperVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+GetSuperVc.h"; sourceTree = "<group>"; };
+		132D63FF24ED01AC005C7BA3 /* UIView+GetSuperVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+GetSuperVc.m"; sourceTree = "<group>"; };
+		132D640224ED0399005C7BA3 /* BubbleTransitionAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BubbleTransitionAnimation.h; sourceTree = "<group>"; };
+		132D640324ED0399005C7BA3 /* BubbleTransitionAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BubbleTransitionAnimation.m; sourceTree = "<group>"; };
+		132D640724ED079A005C7BA3 /* PoemAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PoemAnimationViewController.h; sourceTree = "<group>"; };
+		132D640824ED079A005C7BA3 /* PoemAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PoemAnimationViewController.m; sourceTree = "<group>"; };
+		132D640924ED079A005C7BA3 /* PoemAnimationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PoemAnimationViewController.xib; sourceTree = "<group>"; };
+		132D641024ED0DBD005C7BA3 /* 1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpeg; sourceTree = "<group>"; };
+		132D641624ED1949005C7BA3 /* GradientColorHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradientColorHelper.h; sourceTree = "<group>"; };
+		132D641724ED1949005C7BA3 /* GradientColorHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradientColorHelper.m; sourceTree = "<group>"; };
 		133B457B24DA9DEE00DE64CD /* CherryTreeAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CherryTreeAnimationView.h; sourceTree = "<group>"; };
 		133B457C24DA9DEE00DE64CD /* CherryTreeAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CherryTreeAnimationView.m; sourceTree = "<group>"; };
 		133B457F24DAA15F00DE64CD /* AnimationBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationBaseView.h; sourceTree = "<group>"; };
@@ -475,6 +497,8 @@
 			children = (
 				1321C12524DBEBFD009B771C /* UIView+Animation.h */,
 				1321C12624DBEBFD009B771C /* UIView+Animation.m */,
+				132D63FE24ED01AC005C7BA3 /* UIView+GetSuperVc.h */,
+				132D63FF24ED01AC005C7BA3 /* UIView+GetSuperVc.m */,
 			);
 			path = UiView;
 			sourceTree = "<group>";
@@ -609,6 +633,68 @@
 			path = Snow;
 			sourceTree = "<group>";
 		};
+		132D63F624ECF98C005C7BA3 /* AnimationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				132D63F724ECF9BE005C7BA3 /* PoemAnimationLayer.h */,
+				132D63F824ECF9BE005C7BA3 /* PoemAnimationLayer.m */,
+			);
+			path = AnimationLayer;
+			sourceTree = "<group>";
+		};
+		132D63FA24ECFC47005C7BA3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				132D63FB24ECFC89005C7BA3 /* PoemView.h */,
+				132D63FC24ECFC89005C7BA3 /* PoemView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		132D640124ED034E005C7BA3 /* BubbleTransitionAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				132D640224ED0399005C7BA3 /* BubbleTransitionAnimation.h */,
+				132D640324ED0399005C7BA3 /* BubbleTransitionAnimation.m */,
+			);
+			path = BubbleTransitionAnimation;
+			sourceTree = "<group>";
+		};
+		132D640524ED076A005C7BA3 /* AnimationPoem */ = {
+			isa = PBXGroup;
+			children = (
+				132D640624ED0778005C7BA3 /* VC */,
+			);
+			path = AnimationPoem;
+			sourceTree = "<group>";
+		};
+		132D640624ED0778005C7BA3 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				132D640724ED079A005C7BA3 /* PoemAnimationViewController.h */,
+				132D640824ED079A005C7BA3 /* PoemAnimationViewController.m */,
+				132D640924ED079A005C7BA3 /* PoemAnimationViewController.xib */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		132D640F24ED0DAC005C7BA3 /* BigPicFile */ = {
+			isa = PBXGroup;
+			children = (
+				132D641024ED0DBD005C7BA3 /* 1.jpeg */,
+			);
+			path = BigPicFile;
+			sourceTree = "<group>";
+		};
+		132D641224ED18C8005C7BA3 /* GradientHelper */ = {
+			isa = PBXGroup;
+			children = (
+				132D641624ED1949005C7BA3 /* GradientColorHelper.h */,
+				132D641724ED1949005C7BA3 /* GradientColorHelper.m */,
+			);
+			path = GradientHelper;
+			sourceTree = "<group>";
+		};
 		133B457A24DA9DC500DE64CD /* CherryTreeAnimation */ = {
 			isa = PBXGroup;
 			children = (
@@ -680,6 +766,7 @@
 		1345CA2424D2A84500FDD6E8 /* AppConfig */ = {
 			isa = PBXGroup;
 			children = (
+				132D640F24ED0DAC005C7BA3 /* BigPicFile */,
 				1345CA1624D2A7AE00FDD6E8 /* Assets.xcassets */,
 				1345CA1824D2A7AE00FDD6E8 /* LaunchScreen.storyboard */,
 				1345CA1B24D2A7AE00FDD6E8 /* Info.plist */,
@@ -790,6 +877,7 @@
 		1345CA4424D2B05000FDD6E8 /* AnimationClass */ = {
 			isa = PBXGroup;
 			children = (
+				132D640524ED076A005C7BA3 /* AnimationPoem */,
 				1345CA6724D3F54A00FDD6E8 /* AnimationBook */,
 				1345CA6624D3F53600FDD6E8 /* AnimationStart */,
 			);
@@ -864,6 +952,7 @@
 				13233D1C24D94C300078113B /* SnowAnimation */,
 				13233D0024D7E65C0078113B /* AnimationLab */,
 				1345CA6224D2C5CA00FDD6E8 /* BookCoverAnimation */,
+				132D640124ED034E005C7BA3 /* BubbleTransitionAnimation */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -889,6 +978,8 @@
 		1345CA6724D3F54A00FDD6E8 /* AnimationBook */ = {
 			isa = PBXGroup;
 			children = (
+				132D63FA24ECFC47005C7BA3 /* View */,
+				132D63F624ECF98C005C7BA3 /* AnimationLayer */,
 				13233D0E24D937C90078113B /* VM */,
 				13233D0524D8048E0078113B /* VC */,
 			);
@@ -898,6 +989,7 @@
 		1345CA6F24D3FC4700FDD6E8 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				132D641224ED18C8005C7BA3 /* GradientHelper */,
 				13DBAED224E6811C00BD55E8 /* Sticker */,
 				1321C12B24DC0FAB009B771C /* ColorExtractor */,
 				133B458224DAAC9300DE64CD /* DrawingBoard */,
@@ -1231,6 +1323,8 @@
 				135383FA24DD259E00F511B4 /* GraffitiPictureViewController.xib in Resources */,
 				13209A6F24EA61A10067C616 /* WeatherAnimationViewController.xib in Resources */,
 				1345CA1724D2A7AE00FDD6E8 /* Assets.xcassets in Resources */,
+				132D640B24ED079A005C7BA3 /* PoemAnimationViewController.xib in Resources */,
+				132D641124ED0DBD005C7BA3 /* 1.jpeg in Resources */,
 				1345CA4924D2B08100FDD6E8 /* AnimationStartViewController.xib in Resources */,
 				1345CA6E24D3F5E900FDD6E8 /* AnimationRes.xcassets in Resources */,
 				1353840424DD263B00F511B4 /* GraffitiPictureView.xib in Resources */,
@@ -1296,11 +1390,13 @@
 				13233D0324D7E6820078113B /* ShiningLabel.m in Sources */,
 				1321C12A24DBF285009B771C /* ColorValueView.m in Sources */,
 				13233D0D24D810630078113B /* TapLabel.m in Sources */,
+				132D63F924ECF9BE005C7BA3 /* PoemAnimationLayer.m in Sources */,
 				1345CA3424D2ABD000FDD6E8 /* AnimationMainViewModel.m in Sources */,
 				13233D1124D937EB0078113B /* AnimationBookVM.m in Sources */,
 				132D63F124EBBF75005C7BA3 /* WeatherThrunderAnimationLayer.m in Sources */,
 				13DBAEEE24E689C000BD55E8 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				13FC9DF424E51E460021453C /* DrawWordsAnimationLayer.m in Sources */,
+				132D640424ED0399005C7BA3 /* BubbleTransitionAnimation.m in Sources */,
 				13DBAF3524E68A0700BD55E8 /* StoryMakeToolsView.m in Sources */,
 				13DBAEF024E689C000BD55E8 /* MASCompositeConstraint.m in Sources */,
 				13DBAF3E24E68A0700BD55E8 /* LJBaseModel.m in Sources */,
@@ -1322,6 +1418,7 @@
 				13DBAEF124E689C000BD55E8 /* MASConstraintMaker.m in Sources */,
 				13DBAF3724E68A0700BD55E8 /* StoryMakeStickerFooterCell.m in Sources */,
 				13DBAF3324E68A0700BD55E8 /* StoryMakeStickerLabelView.m in Sources */,
+				132D641824ED1949005C7BA3 /* GradientColorHelper.m in Sources */,
 				13209A5B24EA2DB80067C616 /* TestViewController.m in Sources */,
 				1345CA0C24D2A7AB00FDD6E8 /* AppDelegate.m in Sources */,
 				1345CA5624D2B2BA00FDD6E8 /* NSString+Extension.m in Sources */,
@@ -1337,6 +1434,7 @@
 				13DBAF3D24E68A0700BD55E8 /* ImageUtil.m in Sources */,
 				13209A6824EA61130067C616 /* WeatherSunAnimationLayer.m in Sources */,
 				1321C11324DBB0BC009B771C /* DrawingBoardVM.m in Sources */,
+				132D63FD24ECFC89005C7BA3 /* PoemView.m in Sources */,
 				13DBAF3624E68A0700BD55E8 /* StoryMakeStickerView.m in Sources */,
 				1345CA7324D3FC6700FDD6E8 /* EGLSGlobalGCDTimer.m in Sources */,
 				13DBAF3824E68A0700BD55E8 /* StoryMakeStickerBaseView.m in Sources */,
@@ -1367,8 +1465,10 @@
 				1321C10224DBAA84009B771C /* UIViewController+VCJump.m in Sources */,
 				13DBAF4424E68A0800BD55E8 /* CDPMonitorKeyboard.m in Sources */,
 				132D63ED24EBB8C2005C7BA3 /* WeatherRainAnimationLayer.m in Sources */,
+				132D640024ED01AC005C7BA3 /* UIView+GetSuperVc.m in Sources */,
 				133B458124DAA15F00DE64CD /* AnimationBaseView.m in Sources */,
 				1345CA5324D2B22600FDD6E8 /* UIButton+CustomBtn.m in Sources */,
+				132D640A24ED079A005C7BA3 /* PoemAnimationViewController.m in Sources */,
 				1345CA4824D2B08100FDD6E8 /* AnimationStartViewController.m in Sources */,
 				1345CA1D24D2A7AE00FDD6E8 /* main.m in Sources */,
 				13DBAF4124E68A0700BD55E8 /* LSDrawView.m in Sources */,

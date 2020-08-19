@@ -50,7 +50,9 @@
 
 #pragma mark - private methods
 - (void)animationFinish {
-    self.animationFinishBlock();
+    if (self.animationFinishBlock) {
+        self.animationFinishBlock();
+    }
 }
 
 #pragma mark - CAAnimationDelegate

@@ -10,11 +10,16 @@
 #import "UIViewController+BookCoverAnimation.h"
 #import "DrawLightningAnimationLayer.h"
 #import "StoryMakeImageEditorViewController.h"
+#import "PoemView.h"
 
 @interface AnimationBookVM ()<EGLSGCDTimerDelegate>
 
 /** lightningAnimationLayer */
 @property (nonatomic,strong) DrawLightningAnimationLayer *lightningAnimationLayer;
+/** cherryTreeAnimationView */
+@property (nonatomic,strong) CherryTreeAnimationView *cherryTreeAnimationView;
+/** poemView */
+@property (nonatomic,strong) PoemView *poemView;
 
 @end
 
@@ -54,7 +59,7 @@
     NSMutableAttributedString *tempAttribute1 = [[NSMutableAttributedString alloc] initWithString:@"樱花动画\n" attributes:@{NSFontAttributeName:attributeFont}];
     [tempLab addAttributedString:tempAttribute1 option:^(NSAttributedString * _Nonnull attributedString) {
         if (touchCallBack) {
-            touchCallBack([weak_self setupCherryTreeAnimation]);
+            touchCallBack(@"");
         }
     }];
     
@@ -119,17 +124,11 @@
 }
 
 // 创建樱花动画
-- (CherryTreeAnimationView *)setupCherryTreeAnimation {
-    CherryTreeAnimationView *cherryTreeAnimationView = [[CherryTreeAnimationView alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    [cherryTreeAnimationView animationStart];
-    [cherryTreeAnimationView animationDuration:20];
-    BLOCK_DEFINE(cherryTreeAnimationView);
-    cherryTreeAnimationView.animationFinishBlock = ^{
-        [BLOCK(cherryTreeAnimationView) removeFromSuperview];
-        BLOCK(cherryTreeAnimationView) = nil;
-        NSLog(@"动画结束了");
-    };
-    return cherryTreeAnimationView;
+- (void)setupCherryTreeAnimation:(UIView *)animationView {
+    self.cherryTreeAnimationView = [[CherryTreeAnimationView alloc] initWithFrame:animationView.frame];
+    [self.cherryTreeAnimationView animationStart];
+    [self.cherryTreeAnimationView animationDuration:MAXFLOAT];
+    [animationView addSubview:self.cherryTreeAnimationView];
 }
 
 // 创建文字动画
@@ -155,11 +154,30 @@
     [vc presentViewController:storyMakerVc animated:YES completion:nil];
 }
 
+// poemView
+- (void)setupPoemView:(UIView *)view {
+    [view addSubview:self.poemView];
+}
+
+// 移除动画
+- (void)removeAnimationView {
+    [self.cherryTreeAnimationView removeFromSuperview];
+    self.cherryTreeAnimationView = nil;
+}
+
 #pragma mark - EGLSGCDTimerDelegate
 - (void)countDownRefreshUI {
     if ([EGLSGlobalGCDTimer GlobalTimerSetUp].clockTime%3 == 0) {
         [self.lightningAnimationLayer setNeedsDisplay];
     }
+}
+
+#pragma mark - lazy
+- (PoemView *)poemView {
+    if (!_poemView) {
+        _poemView = [[PoemView alloc] initWithFrame:CGRectMake(0, ScreenHeight - 200, ScreenWidth, 200)];
+    }
+    return _poemView;
 }
 
 @end
