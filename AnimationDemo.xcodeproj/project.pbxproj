@@ -42,13 +42,21 @@
 		132D63F124EBBF75005C7BA3 /* WeatherThrunderAnimationLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 132D63F024EBBF75005C7BA3 /* WeatherThrunderAnimationLayer.m */; };
 		132D63F524EBCA47005C7BA3 /* WeatherSnowAnimationLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 132D63F424EBCA47005C7BA3 /* WeatherSnowAnimationLayer.m */; };
 		132D63F924ECF9BE005C7BA3 /* PoemAnimationLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 132D63F824ECF9BE005C7BA3 /* PoemAnimationLayer.m */; };
-		132D63FD24ECFC89005C7BA3 /* PoemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 132D63FC24ECFC89005C7BA3 /* PoemView.m */; };
+		132D63FD24ECFC89005C7BA3 /* BookAnimationContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 132D63FC24ECFC89005C7BA3 /* BookAnimationContainerView.m */; };
 		132D640024ED01AC005C7BA3 /* UIView+GetSuperVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 132D63FF24ED01AC005C7BA3 /* UIView+GetSuperVc.m */; };
 		132D640424ED0399005C7BA3 /* BubbleTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 132D640324ED0399005C7BA3 /* BubbleTransitionAnimation.m */; };
 		132D640A24ED079A005C7BA3 /* PoemAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 132D640824ED079A005C7BA3 /* PoemAnimationViewController.m */; };
 		132D640B24ED079A005C7BA3 /* PoemAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 132D640924ED079A005C7BA3 /* PoemAnimationViewController.xib */; };
 		132D641124ED0DBD005C7BA3 /* 1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 132D641024ED0DBD005C7BA3 /* 1.jpeg */; };
 		132D641824ED1949005C7BA3 /* GradientColorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 132D641724ED1949005C7BA3 /* GradientColorHelper.m */; };
+		132D641C24EE4C83005C7BA3 /* AlphaAnimationLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 132D641B24EE4C83005C7BA3 /* AlphaAnimationLabel.m */; };
+		132D642224EF744C005C7BA3 /* PoemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 132D642124EF744C005C7BA3 /* PoemView.m */; };
+		132D642E24EFADF4005C7BA3 /* PingFang.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 132D642924EFADF4005C7BA3 /* PingFang.ttc */; };
+		132D642F24EFADF4005C7BA3 /* SFUIText.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 132D642B24EFADF4005C7BA3 /* SFUIText.ttf */; };
+		132D643024EFADF4005C7BA3 /* SFUIDisplay.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 132D642C24EFADF4005C7BA3 /* SFUIDisplay.ttf */; };
+		132D643124EFADF4005C7BA3 /* SFUITextItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 132D642D24EFADF4005C7BA3 /* SFUITextItalic.ttf */; };
+		132D643224EFAECC005C7BA3 /* wwqj.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 132D642624EFADBD005C7BA3 /* wwqj.ttc */; };
+		132D643324EFAECC005C7BA3 /* kittywwt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 132D642524EFADB3005C7BA3 /* kittywwt.ttf */; };
 		133B457D24DA9DEE00DE64CD /* CherryTreeAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 133B457C24DA9DEE00DE64CD /* CherryTreeAnimationView.m */; };
 		133B458124DAA15F00DE64CD /* AnimationBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 133B458024DAA15F00DE64CD /* AnimationBaseView.m */; };
 		133B458524DAACB900DE64CD /* DrawingBoardCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 133B458424DAACB900DE64CD /* DrawingBoardCanvasView.m */; };
@@ -187,8 +195,8 @@
 		132D63F424EBCA47005C7BA3 /* WeatherSnowAnimationLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherSnowAnimationLayer.m; sourceTree = "<group>"; };
 		132D63F724ECF9BE005C7BA3 /* PoemAnimationLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PoemAnimationLayer.h; sourceTree = "<group>"; };
 		132D63F824ECF9BE005C7BA3 /* PoemAnimationLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PoemAnimationLayer.m; sourceTree = "<group>"; };
-		132D63FB24ECFC89005C7BA3 /* PoemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PoemView.h; sourceTree = "<group>"; };
-		132D63FC24ECFC89005C7BA3 /* PoemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PoemView.m; sourceTree = "<group>"; };
+		132D63FB24ECFC89005C7BA3 /* BookAnimationContainerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookAnimationContainerView.h; sourceTree = "<group>"; };
+		132D63FC24ECFC89005C7BA3 /* BookAnimationContainerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookAnimationContainerView.m; sourceTree = "<group>"; };
 		132D63FE24ED01AC005C7BA3 /* UIView+GetSuperVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+GetSuperVc.h"; sourceTree = "<group>"; };
 		132D63FF24ED01AC005C7BA3 /* UIView+GetSuperVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+GetSuperVc.m"; sourceTree = "<group>"; };
 		132D640224ED0399005C7BA3 /* BubbleTransitionAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BubbleTransitionAnimation.h; sourceTree = "<group>"; };
@@ -199,6 +207,16 @@
 		132D641024ED0DBD005C7BA3 /* 1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpeg; sourceTree = "<group>"; };
 		132D641624ED1949005C7BA3 /* GradientColorHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradientColorHelper.h; sourceTree = "<group>"; };
 		132D641724ED1949005C7BA3 /* GradientColorHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradientColorHelper.m; sourceTree = "<group>"; };
+		132D641A24EE4C83005C7BA3 /* AlphaAnimationLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlphaAnimationLabel.h; sourceTree = "<group>"; };
+		132D641B24EE4C83005C7BA3 /* AlphaAnimationLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlphaAnimationLabel.m; sourceTree = "<group>"; };
+		132D642024EF744C005C7BA3 /* PoemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PoemView.h; sourceTree = "<group>"; };
+		132D642124EF744C005C7BA3 /* PoemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PoemView.m; sourceTree = "<group>"; };
+		132D642524EFADB3005C7BA3 /* kittywwt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = kittywwt.ttf; sourceTree = "<group>"; };
+		132D642624EFADBD005C7BA3 /* wwqj.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = wwqj.ttc; sourceTree = "<group>"; };
+		132D642924EFADF4005C7BA3 /* PingFang.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = PingFang.ttc; sourceTree = "<group>"; };
+		132D642B24EFADF4005C7BA3 /* SFUIText.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFUIText.ttf; sourceTree = "<group>"; };
+		132D642C24EFADF4005C7BA3 /* SFUIDisplay.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFUIDisplay.ttf; sourceTree = "<group>"; };
+		132D642D24EFADF4005C7BA3 /* SFUITextItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFUITextItalic.ttf; sourceTree = "<group>"; };
 		133B457B24DA9DEE00DE64CD /* CherryTreeAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CherryTreeAnimationView.h; sourceTree = "<group>"; };
 		133B457C24DA9DEE00DE64CD /* CherryTreeAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CherryTreeAnimationView.m; sourceTree = "<group>"; };
 		133B457F24DAA15F00DE64CD /* AnimationBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationBaseView.h; sourceTree = "<group>"; };
@@ -645,8 +663,10 @@
 		132D63FA24ECFC47005C7BA3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				132D63FB24ECFC89005C7BA3 /* PoemView.h */,
-				132D63FC24ECFC89005C7BA3 /* PoemView.m */,
+				132D63FB24ECFC89005C7BA3 /* BookAnimationContainerView.h */,
+				132D63FC24ECFC89005C7BA3 /* BookAnimationContainerView.m */,
+				132D642024EF744C005C7BA3 /* PoemView.h */,
+				132D642124EF744C005C7BA3 /* PoemView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -693,6 +713,60 @@
 				132D641724ED1949005C7BA3 /* GradientColorHelper.m */,
 			);
 			path = GradientHelper;
+			sourceTree = "<group>";
+		};
+		132D641924EE4C61005C7BA3 /* AlphaLabel */ = {
+			isa = PBXGroup;
+			children = (
+				132D641A24EE4C83005C7BA3 /* AlphaAnimationLabel.h */,
+				132D641B24EE4C83005C7BA3 /* AlphaAnimationLabel.m */,
+			);
+			path = AlphaLabel;
+			sourceTree = "<group>";
+		};
+		132D642324EFAD6F005C7BA3 /* AppFont */ = {
+			isa = PBXGroup;
+			children = (
+				132D642724EFADC2005C7BA3 /* PianPianTi */,
+				132D642424EFADA3005C7BA3 /* WaWaTi */,
+			);
+			path = AppFont;
+			sourceTree = "<group>";
+		};
+		132D642424EFADA3005C7BA3 /* WaWaTi */ = {
+			isa = PBXGroup;
+			children = (
+				132D642624EFADBD005C7BA3 /* wwqj.ttc */,
+				132D642524EFADB3005C7BA3 /* kittywwt.ttf */,
+			);
+			path = WaWaTi;
+			sourceTree = "<group>";
+		};
+		132D642724EFADC2005C7BA3 /* PianPianTi */ = {
+			isa = PBXGroup;
+			children = (
+				132D642A24EFADF4005C7BA3 /* CoreUI */,
+				132D642824EFADF4005C7BA3 /* LanguageSupport */,
+			);
+			path = PianPianTi;
+			sourceTree = "<group>";
+		};
+		132D642824EFADF4005C7BA3 /* LanguageSupport */ = {
+			isa = PBXGroup;
+			children = (
+				132D642924EFADF4005C7BA3 /* PingFang.ttc */,
+			);
+			path = LanguageSupport;
+			sourceTree = "<group>";
+		};
+		132D642A24EFADF4005C7BA3 /* CoreUI */ = {
+			isa = PBXGroup;
+			children = (
+				132D642B24EFADF4005C7BA3 /* SFUIText.ttf */,
+				132D642C24EFADF4005C7BA3 /* SFUIDisplay.ttf */,
+				132D642D24EFADF4005C7BA3 /* SFUITextItalic.ttf */,
+			);
+			path = CoreUI;
 			sourceTree = "<group>";
 		};
 		133B457A24DA9DC500DE64CD /* CherryTreeAnimation */ = {
@@ -766,6 +840,7 @@
 		1345CA2424D2A84500FDD6E8 /* AppConfig */ = {
 			isa = PBXGroup;
 			children = (
+				132D642324EFAD6F005C7BA3 /* AppFont */,
 				132D640F24ED0DAC005C7BA3 /* BigPicFile */,
 				1345CA1624D2A7AE00FDD6E8 /* Assets.xcassets */,
 				1345CA1824D2A7AE00FDD6E8 /* LaunchScreen.storyboard */,
@@ -989,6 +1064,7 @@
 		1345CA6F24D3FC4700FDD6E8 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				132D641924EE4C61005C7BA3 /* AlphaLabel */,
 				132D641224ED18C8005C7BA3 /* GradientHelper */,
 				13DBAED224E6811C00BD55E8 /* Sticker */,
 				1321C12B24DC0FAB009B771C /* ColorExtractor */,
@@ -1311,6 +1387,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				132D643224EFAECC005C7BA3 /* wwqj.ttc in Resources */,
+				132D643324EFAECC005C7BA3 /* kittywwt.ttf in Resources */,
 				1345CA2C24D2A99B00FDD6E8 /* AnimationMainViewController.xib in Resources */,
 				13209A5C24EA2DB80067C616 /* TestViewController.xib in Resources */,
 				1345CA1A24D2A7AE00FDD6E8 /* LaunchScreen.storyboard in Resources */,
@@ -1319,12 +1397,16 @@
 				1345CA6C24D3F57900FDD6E8 /* AnimationBookViewController.xib in Resources */,
 				1345CA4324D2B03B00FDD6E8 /* AnimationBaseViewController.xib in Resources */,
 				13DBAF4524E68A0800BD55E8 /* StoryMaker.xcassets in Resources */,
+				132D643124EFADF4005C7BA3 /* SFUITextItalic.ttf in Resources */,
+				132D642F24EFADF4005C7BA3 /* SFUIText.ttf in Resources */,
 				13DBAED124E67A6500BD55E8 /* WeatherAnimationRes.xcassets in Resources */,
 				135383FA24DD259E00F511B4 /* GraffitiPictureViewController.xib in Resources */,
 				13209A6F24EA61A10067C616 /* WeatherAnimationViewController.xib in Resources */,
 				1345CA1724D2A7AE00FDD6E8 /* Assets.xcassets in Resources */,
+				132D642E24EFADF4005C7BA3 /* PingFang.ttc in Resources */,
 				132D640B24ED079A005C7BA3 /* PoemAnimationViewController.xib in Resources */,
 				132D641124ED0DBD005C7BA3 /* 1.jpeg in Resources */,
+				132D643024EFADF4005C7BA3 /* SFUIDisplay.ttf in Resources */,
 				1345CA4924D2B08100FDD6E8 /* AnimationStartViewController.xib in Resources */,
 				1345CA6E24D3F5E900FDD6E8 /* AnimationRes.xcassets in Resources */,
 				1353840424DD263B00F511B4 /* GraffitiPictureView.xib in Resources */,
@@ -1408,6 +1490,7 @@
 				1345CA5024D2B18C00FDD6E8 /* UINavigationController+NavigationBar.m in Sources */,
 				135383FE24DD25C600F511B4 /* GraffitiPictureVM.m in Sources */,
 				132D63E924EB885A005C7BA3 /* WeatherCloudAnimationLayer.m in Sources */,
+				132D642224EF744C005C7BA3 /* PoemView.m in Sources */,
 				13DBAF4224E68A0700BD55E8 /* StoryMakerFontManager.m in Sources */,
 				13233D1F24D94C610078113B /* SnowAnimationView.m in Sources */,
 				1345CA2B24D2A99B00FDD6E8 /* AnimationMainViewController.m in Sources */,
@@ -1434,7 +1517,7 @@
 				13DBAF3D24E68A0700BD55E8 /* ImageUtil.m in Sources */,
 				13209A6824EA61130067C616 /* WeatherSunAnimationLayer.m in Sources */,
 				1321C11324DBB0BC009B771C /* DrawingBoardVM.m in Sources */,
-				132D63FD24ECFC89005C7BA3 /* PoemView.m in Sources */,
+				132D63FD24ECFC89005C7BA3 /* BookAnimationContainerView.m in Sources */,
 				13DBAF3624E68A0700BD55E8 /* StoryMakeStickerView.m in Sources */,
 				1345CA7324D3FC6700FDD6E8 /* EGLSGlobalGCDTimer.m in Sources */,
 				13DBAF3824E68A0700BD55E8 /* StoryMakeStickerBaseView.m in Sources */,
@@ -1459,6 +1542,7 @@
 				1321C12E24DCF1E0009B771C /* BrushColorView.m in Sources */,
 				13DBAF3424E68A0700BD55E8 /* StoryMakeStickerColorFootSingleViewController.m in Sources */,
 				132D63F524EBCA47005C7BA3 /* WeatherSnowAnimationLayer.m in Sources */,
+				132D641C24EE4C83005C7BA3 /* AlphaAnimationLabel.m in Sources */,
 				13DBAF3B24E68A0700BD55E8 /* StoryMakeFilterFooterView.m in Sources */,
 				13209A6E24EA61A10067C616 /* WeatherAnimationViewController.m in Sources */,
 				1345CA6524D2C5F200FDD6E8 /* BookAnimationObject.m in Sources */,

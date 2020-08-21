@@ -30,6 +30,19 @@
      [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appActive:) name:AppEnterForegroundNotification object:nil];
     [self setupUI];
     [self.startVM setupBookAnimation:self.bookCover animationVC:self];
+    [self systemWordFont];
+}
+
+// 获取系统字体库
+- (void)systemWordFont {
+    NSArray *familyNames = [UIFont familyNames];
+    for( NSString *familyName in familyNames ){
+        printf( "Family: %s \n", [familyName UTF8String] );
+        NSArray *fontNames = [UIFont fontNamesForFamilyName:familyName];
+        for( NSString *fontName in fontNames ){
+            printf( "\tFont: %s \n", [fontName UTF8String] );
+        }
+    }
 }
 
 - (void)viewDidAppear:(BOOL)animated {

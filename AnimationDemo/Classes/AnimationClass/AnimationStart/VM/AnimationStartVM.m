@@ -36,7 +36,7 @@
     shiningLab.frame = CGRectMake(X, 80, titleSize.width, titleSize.height);
     shiningLab.text = title;
     shiningLab.textColor = [UIColor grayColor];
-    shiningLab.font = [UIFont systemFontOfSize:30];
+    shiningLab.font = PianPianFontSize(30);
     shiningLab.shimmerType = ST_ShimmerAll;
     shiningLab.durationTime = .8;
     shiningLab.shimmerColor = [UIColor redColor];

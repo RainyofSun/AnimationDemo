@@ -2,7 +2,7 @@
 //  PoemView.h
 //  AnimationDemo
 //
-//  Created by EGLS_BMAC on 2020/8/19.
+//  Created by EGLS_BMAC on 2020/8/21.
 //  Copyright © 2020 EGLS_BMAC. All rights reserved.
 //
 
@@ -11,6 +11,11 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface PoemView : UIView
+
+/** poemSize */
+@property (nonatomic,readonly) CGSize poemSize;
+
+- (void)startAnimation;
 
 @end
 
