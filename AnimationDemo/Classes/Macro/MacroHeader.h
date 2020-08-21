@@ -43,8 +43,15 @@
 #define WEAK_DEFINE(Obj)    __weak typeof(Obj) weak_##Obj = Obj
 #define WEAK(Obj)           weak_##Obj
 #define wself               weak_self
+
 /// Block类型
 #define BLOCK_DEFINE(Obj)   __block typeof(Obj) block_##Obj = Obj
 #define BLOCK(Obj)          block_##Obj
+
+/// 字体
+// 翩翩体
+#define PianPianFontSize(fontSize) [UIFont fontWithName:@"PingFang HK" size:fontSize]
+// 娃娃体
+#define WaWaFontSize(fontSize)     [UIFont fontWithName:@"Heiti SC" size:fontSize]
 
 #endif /* MacroHeader_h */

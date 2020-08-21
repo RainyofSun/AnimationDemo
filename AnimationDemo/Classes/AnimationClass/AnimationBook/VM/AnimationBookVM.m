@@ -10,7 +10,7 @@
 #import "UIViewController+BookCoverAnimation.h"
 #import "DrawLightningAnimationLayer.h"
 #import "StoryMakeImageEditorViewController.h"
-#import "PoemView.h"
+#import "BookAnimationContainerView.h"
 
 @interface AnimationBookVM ()<EGLSGCDTimerDelegate>
 
@@ -19,7 +19,7 @@
 /** cherryTreeAnimationView */
 @property (nonatomic,strong) CherryTreeAnimationView *cherryTreeAnimationView;
 /** poemView */
-@property (nonatomic,strong) PoemView *poemView;
+@property (nonatomic,strong) BookAnimationContainerView *poemView;
 
 @end
 
@@ -173,9 +173,9 @@
 }
 
 #pragma mark - lazy
-- (PoemView *)poemView {
+- (BookAnimationContainerView *)poemView {
     if (!_poemView) {
-        _poemView = [[PoemView alloc] initWithFrame:CGRectMake(0, ScreenHeight - 200, ScreenWidth, 200)];
+        _poemView = [[BookAnimationContainerView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight)];
     }
     return _poemView;
 }
