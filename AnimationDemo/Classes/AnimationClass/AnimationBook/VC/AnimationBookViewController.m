@@ -25,13 +25,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self setupBackgroud];
+//    [self addUI];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    [self.bookVM setupCherryTreeAnimation:self.view];
+    [self.bookVM setupCherryTreeAnimation:self.view]; // 回退动画有影响
     self.view.layer.contents = nil;
     [self.bookVM setupPoemView:self.view];
+    [self.bookVM setupBookAnimation:self];
+    self.navigationController.delegate = self;
 }
 
 - (void)viewDidDisappear:(BOOL)animated {

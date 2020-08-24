@@ -41,7 +41,8 @@
     [self addSubview:self.poemView];
     [self addSubview:self.poemBtn];
     [self.poemBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.center.mas_equalTo(self);
+        make.centerX.mas_equalTo(self);
+        make.bottom.mas_equalTo(-80);
         make.size.mas_equalTo(CGSizeMake(40, 40));
     }];
     self.poemBtn.backgroundColor = [UIColor redColor];
