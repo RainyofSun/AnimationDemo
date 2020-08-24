@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BookAnimationContainerView : UIView
 
+- (CGPoint)centerPoint;
+
 @end
 
 NS_ASSUME_NONNULL_END

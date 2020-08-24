@@ -167,6 +167,11 @@
     }
 }
 
+// 获取中心点
+- (CGPoint)poemAnimationCenterPoint {
+    return [self.poemContainerView centerPoint];
+}
+
 #pragma mark - EGLSGCDTimerDelegate
 - (void)countDownRefreshUI {
     if ([EGLSGlobalGCDTimer GlobalTimerSetUp].clockTime%3 == 0) {

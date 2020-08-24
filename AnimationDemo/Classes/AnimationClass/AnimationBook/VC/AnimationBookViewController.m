@@ -54,13 +54,13 @@
 #pragma mark - UIViewControllerTransitioningDelegate
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
     self.transition.transitionModel = BubbleTransitionModel_Present;
-    self.transition.startPoint = CGPointMake(self.view.center.x, ScreenHeight - 100);
+    self.transition.startPoint = [self.bookVM poemAnimationCenterPoint];
     return self.transition;
 }
 
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
     self.transition.transitionModel = BubbleTransitionModel_Dismiss;
-    self.transition.startPoint = CGPointMake(self.view.center.x, ScreenHeight - 100);
+    self.transition.startPoint = [self.bookVM poemAnimationCenterPoint];
     return self.transition;
 }
 

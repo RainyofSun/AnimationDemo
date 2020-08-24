@@ -25,8 +25,8 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [self showwFilterView];
-    [self.view addSubview:self.filterFooterView];
+//    [self showwFilterView];
+//    [self.view addSubview:self.filterFooterView];
 }
 
 - (void)showwFilterView {
