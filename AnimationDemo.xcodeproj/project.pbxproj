@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		131CFE1424F36B0500550975 /* purpleHalo.png in Resources */ = {isa = PBXBuildFile; fileRef = 131CFE1324F36B0500550975 /* purpleHalo.png */; };
+		131CFE1824F39D4000550975 /* CustomBasicAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 131CFE1724F39D4000550975 /* CustomBasicAnimation.m */; };
 		13209A5B24EA2DB80067C616 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13209A5924EA2DB80067C616 /* TestViewController.m */; };
 		13209A5C24EA2DB80067C616 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13209A5A24EA2DB80067C616 /* TestViewController.xib */; };
 		13209A6124EA608B0067C616 /* WeatherAnimationBaseLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 13209A6024EA608B0067C616 /* WeatherAnimationBaseLayer.m */; };
@@ -128,6 +130,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		131CFE1324F36B0500550975 /* purpleHalo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = purpleHalo.png; sourceTree = "<group>"; };
+		131CFE1624F39D4000550975 /* CustomBasicAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomBasicAnimation.h; sourceTree = "<group>"; };
+		131CFE1724F39D4000550975 /* CustomBasicAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomBasicAnimation.m; sourceTree = "<group>"; };
 		13209A5824EA2DB80067C616 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		13209A5924EA2DB80067C616 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		13209A5A24EA2DB80067C616 /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
@@ -368,6 +373,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		131CFE1524F399F200550975 /* AnimationDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				131CFE1624F39D4000550975 /* CustomBasicAnimation.h */,
+				131CFE1724F39D4000550975 /* CustomBasicAnimation.m */,
+			);
+			path = AnimationDelegate;
+			sourceTree = "<group>";
+		};
 		13209A5724EA2D9A0067C616 /* Test */ = {
 			isa = PBXGroup;
 			children = (
@@ -701,6 +715,7 @@
 		132D640F24ED0DAC005C7BA3 /* BigPicFile */ = {
 			isa = PBXGroup;
 			children = (
+				131CFE1324F36B0500550975 /* purpleHalo.png */,
 				132D641024ED0DBD005C7BA3 /* 1.jpeg */,
 			);
 			path = BigPicFile;
@@ -1020,6 +1035,7 @@
 		1345CA6124D2C5C000FDD6E8 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				131CFE1524F399F200550975 /* AnimationDelegate */,
 				13209A5D24EA60510067C616 /* WeatherAnimation */,
 				13FC9DF524E53B380021453C /* DrawLightningAnimation */,
 				13FC9DF124E5183D0021453C /* DrawWordsAnimation */,
@@ -1401,6 +1417,7 @@
 				132D642F24EFADF4005C7BA3 /* SFUIText.ttf in Resources */,
 				13DBAED124E67A6500BD55E8 /* WeatherAnimationRes.xcassets in Resources */,
 				135383FA24DD259E00F511B4 /* GraffitiPictureViewController.xib in Resources */,
+				131CFE1424F36B0500550975 /* purpleHalo.png in Resources */,
 				13209A6F24EA61A10067C616 /* WeatherAnimationViewController.xib in Resources */,
 				1345CA1724D2A7AE00FDD6E8 /* Assets.xcassets in Resources */,
 				132D642E24EFADF4005C7BA3 /* PingFang.ttc in Resources */,
@@ -1493,6 +1510,7 @@
 				132D642224EF744C005C7BA3 /* PoemView.m in Sources */,
 				13DBAF4224E68A0700BD55E8 /* StoryMakerFontManager.m in Sources */,
 				13233D1F24D94C610078113B /* SnowAnimationView.m in Sources */,
+				131CFE1824F39D4000550975 /* CustomBasicAnimation.m in Sources */,
 				1345CA2B24D2A99B00FDD6E8 /* AnimationMainViewController.m in Sources */,
 				1345CA3924D2AC5B00FDD6E8 /* AnimationBaseNavViewController.m in Sources */,
 				1321C11C24DBDD04009B771C /* BrushWidthSliderView.m in Sources */,

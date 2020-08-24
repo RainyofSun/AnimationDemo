@@ -38,6 +38,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setupPoemView:(UIView *)view;
 /// 移除动画
 - (void)removeAnimationView;
+/// 获取中心点
+- (CGPoint)poemAnimationCenterPoint;
 
 @end
 

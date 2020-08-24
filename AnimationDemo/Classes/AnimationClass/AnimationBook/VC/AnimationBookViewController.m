@@ -25,13 +25,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self setupBackgroud];
+//    [self addUI];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    [self.bookVM setupCherryTreeAnimation:self.view];
+    [self.bookVM setupCherryTreeAnimation:self.view]; // 回退动画有影响
     self.view.layer.contents = nil;
     [self.bookVM setupPoemView:self.view];
+    [self.bookVM setupBookAnimation:self];
+    self.navigationController.delegate = self;
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
@@ -51,13 +54,13 @@
 #pragma mark - UIViewControllerTransitioningDelegate
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
     self.transition.transitionModel = BubbleTransitionModel_Present;
-    self.transition.startPoint = CGPointMake(self.view.center.x, ScreenHeight - 100);
+    self.transition.startPoint = [self.bookVM poemAnimationCenterPoint];
     return self.transition;
 }
 
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
     self.transition.transitionModel = BubbleTransitionModel_Dismiss;
-    self.transition.startPoint = CGPointMake(self.view.center.x, ScreenHeight - 100);
+    self.transition.startPoint = [self.bookVM poemAnimationCenterPoint];
     return self.transition;
 }
 

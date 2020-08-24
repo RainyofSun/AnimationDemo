@@ -19,7 +19,7 @@
 /** cherryTreeAnimationView */
 @property (nonatomic,strong) CherryTreeAnimationView *cherryTreeAnimationView;
 /** poemView */
-@property (nonatomic,strong) BookAnimationContainerView *poemView;
+@property (nonatomic,strong) BookAnimationContainerView *poemContainerView;
 
 @end
 
@@ -156,13 +156,20 @@
 
 // poemView
 - (void)setupPoemView:(UIView *)view {
-    [view addSubview:self.poemView];
+    [view addSubview:self.poemContainerView];
 }
 
 // 移除动画
 - (void)removeAnimationView {
-    [self.cherryTreeAnimationView removeFromSuperview];
-    self.cherryTreeAnimationView = nil;
+    if (_cherryTreeAnimationView) {
+        [self.cherryTreeAnimationView removeFromSuperview];
+        self.cherryTreeAnimationView = nil;
+    }
+}
+
+// 获取中心点
+- (CGPoint)poemAnimationCenterPoint {
+    return [self.poemContainerView centerPoint];
 }
 
 #pragma mark - EGLSGCDTimerDelegate
@@ -173,11 +180,11 @@
 }
 
 #pragma mark - lazy
-- (BookAnimationContainerView *)poemView {
-    if (!_poemView) {
-        _poemView = [[BookAnimationContainerView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight)];
+- (BookAnimationContainerView *)poemContainerView {
+    if (!_poemContainerView) {
+        _poemContainerView = [[BookAnimationContainerView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight)];
     }
-    return _poemView;
+    return _poemContainerView;
 }
 
 @end
