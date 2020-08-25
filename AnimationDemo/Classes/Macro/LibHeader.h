@@ -29,5 +29,6 @@
 // 工具文件
 #import "EGLSGlobalGCDTimer.h"
 #import "GradientColorHelper.h"
+#import "AnimationLabelHeader.h"
 
 #endif /* LibHeader_h */

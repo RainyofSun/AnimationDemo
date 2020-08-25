@@ -7,8 +7,12 @@
 //
 
 #import "PoemAnimationViewController.h"
+#import "AnimationPoemVM.h"
 
 @interface PoemAnimationViewController ()
+
+/** poemVM */
+@property (nonatomic,strong) AnimationPoemVM *poemVM;
 
 @end
 
@@ -32,6 +36,15 @@
 - (void)addBackground {
     UIImage *contentsImg = [UIImage imageWithContentsOfFile:[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"1.jpeg"]];
     self.view.layer.contents = (__bridge id)contentsImg.CGImage;
+    [self.poemVM setupPoemView:self];
+}
+
+#pragma mark - lazy
+- (AnimationPoemVM *)poemVM {
+    if (!_poemVM) {
+        _poemVM = [[AnimationPoemVM alloc] init];
+    }
+    return _poemVM;
 }
 
 /*

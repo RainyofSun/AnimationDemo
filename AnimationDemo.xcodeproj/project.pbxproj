@@ -9,6 +9,24 @@
 /* Begin PBXBuildFile section */
 		131CFE1424F36B0500550975 /* purpleHalo.png in Resources */ = {isa = PBXBuildFile; fileRef = 131CFE1324F36B0500550975 /* purpleHalo.png */; };
 		131CFE1824F39D4000550975 /* CustomBasicAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 131CFE1724F39D4000550975 /* CustomBasicAnimation.m */; };
+		131CFE4424F4E8BA00550975 /* AnimationCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 131CFE4324F4E8BA00550975 /* AnimationCircleView.m */; };
+		131CFE6D24F4F98600550975 /* ZCCoreTextLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 131CFE6B24F4F98600550975 /* ZCCoreTextLayout.m */; };
+		131CFE7124F4F99F00550975 /* ZCEasingUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 131CFE7024F4F99F00550975 /* ZCEasingUtil.m */; };
+		131CFE7524F4F9C100550975 /* ZCAnimatedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 131CFE7424F4F9C100550975 /* ZCAnimatedLabel.m */; };
+		131CFE7A24F4F9CD00550975 /* ZCDashLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 131CFE7824F4F9CC00550975 /* ZCDashLabel.m */; };
+		131CFE7B24F4F9CD00550975 /* ZCDuangLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 131CFE7924F4F9CD00550975 /* ZCDuangLabel.m */; };
+		131CFE8124F4F9D900550975 /* ZCFlyinLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 131CFE7C24F4F9D900550975 /* ZCFlyinLabel.m */; };
+		131CFE8224F4F9D900550975 /* ZCFallLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 131CFE7D24F4F9D900550975 /* ZCFallLabel.m */; };
+		131CFE8E24F4F9F400550975 /* ZCThrownLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 131CFE8324F4F9F300550975 /* ZCThrownLabel.m */; };
+		131CFE8F24F4F9F400550975 /* ZCTransparencyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 131CFE8524F4F9F300550975 /* ZCTransparencyLabel.m */; };
+		131CFE9024F4F9F400550975 /* ZCFocusLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 131CFE8624F4F9F300550975 /* ZCFocusLabel.m */; };
+		131CFE9124F4F9F400550975 /* ZCShapeshiftLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 131CFE8824F4F9F300550975 /* ZCShapeshiftLabel.m */; };
+		131CFE9224F4F9F400550975 /* ZCRevealLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 131CFE8924F4F9F300550975 /* ZCRevealLabel.m */; };
+		131CFE9324F4F9F400550975 /* ZCSpinLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 131CFE8D24F4F9F400550975 /* ZCSpinLabel.m */; };
+		131CFE9824F4FAF200550975 /* AnimationPoemVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 131CFE9724F4FAF200550975 /* AnimationPoemVM.m */; };
+		131CFE9C24F4FB0E00550975 /* AnimationPoemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 131CFE9B24F4FB0E00550975 /* AnimationPoemView.m */; };
+		131CFEA124F5026900550975 /* AnimationLabelSettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 131CFEA024F5026900550975 /* AnimationLabelSettingView.m */; };
+		131CFEA324F5027800550975 /* AnimationLabelSettingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 131CFEA224F5027800550975 /* AnimationLabelSettingView.xib */; };
 		13209A5B24EA2DB80067C616 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13209A5924EA2DB80067C616 /* TestViewController.m */; };
 		13209A5C24EA2DB80067C616 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13209A5A24EA2DB80067C616 /* TestViewController.xib */; };
 		13209A6124EA608B0067C616 /* WeatherAnimationBaseLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 13209A6024EA608B0067C616 /* WeatherAnimationBaseLayer.m */; };
@@ -133,6 +151,42 @@
 		131CFE1324F36B0500550975 /* purpleHalo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = purpleHalo.png; sourceTree = "<group>"; };
 		131CFE1624F39D4000550975 /* CustomBasicAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomBasicAnimation.h; sourceTree = "<group>"; };
 		131CFE1724F39D4000550975 /* CustomBasicAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomBasicAnimation.m; sourceTree = "<group>"; };
+		131CFE4224F4E8BA00550975 /* AnimationCircleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationCircleView.h; sourceTree = "<group>"; };
+		131CFE4324F4E8BA00550975 /* AnimationCircleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationCircleView.m; sourceTree = "<group>"; };
+		131CFE6B24F4F98600550975 /* ZCCoreTextLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCCoreTextLayout.m; sourceTree = "<group>"; };
+		131CFE6C24F4F98600550975 /* ZCCoreTextLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCCoreTextLayout.h; sourceTree = "<group>"; };
+		131CFE6F24F4F99F00550975 /* ZCEasingUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCEasingUtil.h; sourceTree = "<group>"; };
+		131CFE7024F4F99F00550975 /* ZCEasingUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCEasingUtil.m; sourceTree = "<group>"; };
+		131CFE7324F4F9C100550975 /* ZCAnimatedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCAnimatedLabel.h; sourceTree = "<group>"; };
+		131CFE7424F4F9C100550975 /* ZCAnimatedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCAnimatedLabel.m; sourceTree = "<group>"; };
+		131CFE7624F4F9CC00550975 /* ZCDuangLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCDuangLabel.h; sourceTree = "<group>"; };
+		131CFE7724F4F9CC00550975 /* ZCDashLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCDashLabel.h; sourceTree = "<group>"; };
+		131CFE7824F4F9CC00550975 /* ZCDashLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCDashLabel.m; sourceTree = "<group>"; };
+		131CFE7924F4F9CD00550975 /* ZCDuangLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCDuangLabel.m; sourceTree = "<group>"; };
+		131CFE7C24F4F9D900550975 /* ZCFlyinLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCFlyinLabel.m; sourceTree = "<group>"; };
+		131CFE7D24F4F9D900550975 /* ZCFallLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCFallLabel.m; sourceTree = "<group>"; };
+		131CFE7E24F4F9D900550975 /* ZCFocusLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCFocusLabel.h; sourceTree = "<group>"; };
+		131CFE7F24F4F9D900550975 /* ZCFallLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCFallLabel.h; sourceTree = "<group>"; };
+		131CFE8024F4F9D900550975 /* ZCFlyinLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCFlyinLabel.h; sourceTree = "<group>"; };
+		131CFE8324F4F9F300550975 /* ZCThrownLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCThrownLabel.m; sourceTree = "<group>"; };
+		131CFE8424F4F9F300550975 /* ZCSpinLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCSpinLabel.h; sourceTree = "<group>"; };
+		131CFE8524F4F9F300550975 /* ZCTransparencyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCTransparencyLabel.m; sourceTree = "<group>"; };
+		131CFE8624F4F9F300550975 /* ZCFocusLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCFocusLabel.m; sourceTree = "<group>"; };
+		131CFE8724F4F9F300550975 /* ZCRevealLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCRevealLabel.h; sourceTree = "<group>"; };
+		131CFE8824F4F9F300550975 /* ZCShapeshiftLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCShapeshiftLabel.m; sourceTree = "<group>"; };
+		131CFE8924F4F9F300550975 /* ZCRevealLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCRevealLabel.m; sourceTree = "<group>"; };
+		131CFE8A24F4F9F300550975 /* ZCShapeshiftLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCShapeshiftLabel.h; sourceTree = "<group>"; };
+		131CFE8B24F4F9F400550975 /* ZCTransparencyLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCTransparencyLabel.h; sourceTree = "<group>"; };
+		131CFE8C24F4F9F400550975 /* ZCThrownLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCThrownLabel.h; sourceTree = "<group>"; };
+		131CFE8D24F4F9F400550975 /* ZCSpinLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCSpinLabel.m; sourceTree = "<group>"; };
+		131CFE9424F4FA3C00550975 /* AnimationLabelHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationLabelHeader.h; sourceTree = "<group>"; };
+		131CFE9624F4FAF200550975 /* AnimationPoemVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationPoemVM.h; sourceTree = "<group>"; };
+		131CFE9724F4FAF200550975 /* AnimationPoemVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationPoemVM.m; sourceTree = "<group>"; };
+		131CFE9A24F4FB0E00550975 /* AnimationPoemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationPoemView.h; sourceTree = "<group>"; };
+		131CFE9B24F4FB0E00550975 /* AnimationPoemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationPoemView.m; sourceTree = "<group>"; };
+		131CFE9F24F5026900550975 /* AnimationLabelSettingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationLabelSettingView.h; sourceTree = "<group>"; };
+		131CFEA024F5026900550975 /* AnimationLabelSettingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationLabelSettingView.m; sourceTree = "<group>"; };
+		131CFEA224F5027800550975 /* AnimationLabelSettingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimationLabelSettingView.xib; sourceTree = "<group>"; };
 		13209A5824EA2DB80067C616 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		13209A5924EA2DB80067C616 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		13209A5A24EA2DB80067C616 /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
@@ -380,6 +434,94 @@
 				131CFE1724F39D4000550975 /* CustomBasicAnimation.m */,
 			);
 			path = AnimationDelegate;
+			sourceTree = "<group>";
+		};
+		131CFE4124F4E89D00550975 /* AnimationCircleView */ = {
+			isa = PBXGroup;
+			children = (
+				131CFE4224F4E8BA00550975 /* AnimationCircleView.h */,
+				131CFE4324F4E8BA00550975 /* AnimationCircleView.m */,
+			);
+			path = AnimationCircleView;
+			sourceTree = "<group>";
+		};
+		131CFE6924F4F95900550975 /* AnimationLabel */ = {
+			isa = PBXGroup;
+			children = (
+				131CFE7224F4F9A400550975 /* Label */,
+				131CFE6E24F4F98900550975 /* Util */,
+				131CFE6A24F4F97300550975 /* TextLayout */,
+				131CFE9424F4FA3C00550975 /* AnimationLabelHeader.h */,
+			);
+			path = AnimationLabel;
+			sourceTree = "<group>";
+		};
+		131CFE6A24F4F97300550975 /* TextLayout */ = {
+			isa = PBXGroup;
+			children = (
+				131CFE6C24F4F98600550975 /* ZCCoreTextLayout.h */,
+				131CFE6B24F4F98600550975 /* ZCCoreTextLayout.m */,
+			);
+			path = TextLayout;
+			sourceTree = "<group>";
+		};
+		131CFE6E24F4F98900550975 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				131CFE6F24F4F99F00550975 /* ZCEasingUtil.h */,
+				131CFE7024F4F99F00550975 /* ZCEasingUtil.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		131CFE7224F4F9A400550975 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				131CFE7324F4F9C100550975 /* ZCAnimatedLabel.h */,
+				131CFE7424F4F9C100550975 /* ZCAnimatedLabel.m */,
+				131CFE7724F4F9CC00550975 /* ZCDashLabel.h */,
+				131CFE7824F4F9CC00550975 /* ZCDashLabel.m */,
+				131CFE7624F4F9CC00550975 /* ZCDuangLabel.h */,
+				131CFE7924F4F9CD00550975 /* ZCDuangLabel.m */,
+				131CFE7F24F4F9D900550975 /* ZCFallLabel.h */,
+				131CFE7D24F4F9D900550975 /* ZCFallLabel.m */,
+				131CFE8024F4F9D900550975 /* ZCFlyinLabel.h */,
+				131CFE7C24F4F9D900550975 /* ZCFlyinLabel.m */,
+				131CFE7E24F4F9D900550975 /* ZCFocusLabel.h */,
+				131CFE8624F4F9F300550975 /* ZCFocusLabel.m */,
+				131CFE8724F4F9F300550975 /* ZCRevealLabel.h */,
+				131CFE8924F4F9F300550975 /* ZCRevealLabel.m */,
+				131CFE8A24F4F9F300550975 /* ZCShapeshiftLabel.h */,
+				131CFE8824F4F9F300550975 /* ZCShapeshiftLabel.m */,
+				131CFE8424F4F9F300550975 /* ZCSpinLabel.h */,
+				131CFE8D24F4F9F400550975 /* ZCSpinLabel.m */,
+				131CFE8C24F4F9F400550975 /* ZCThrownLabel.h */,
+				131CFE8324F4F9F300550975 /* ZCThrownLabel.m */,
+				131CFE8B24F4F9F400550975 /* ZCTransparencyLabel.h */,
+				131CFE8524F4F9F300550975 /* ZCTransparencyLabel.m */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
+		131CFE9524F4FADC00550975 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				131CFE9624F4FAF200550975 /* AnimationPoemVM.h */,
+				131CFE9724F4FAF200550975 /* AnimationPoemVM.m */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		131CFE9924F4FAFE00550975 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				131CFE9A24F4FB0E00550975 /* AnimationPoemView.h */,
+				131CFE9B24F4FB0E00550975 /* AnimationPoemView.m */,
+				131CFE9F24F5026900550975 /* AnimationLabelSettingView.h */,
+				131CFEA024F5026900550975 /* AnimationLabelSettingView.m */,
+				131CFEA224F5027800550975 /* AnimationLabelSettingView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		13209A5724EA2D9A0067C616 /* Test */ = {
@@ -697,6 +839,8 @@
 		132D640524ED076A005C7BA3 /* AnimationPoem */ = {
 			isa = PBXGroup;
 			children = (
+				131CFE9924F4FAFE00550975 /* View */,
+				131CFE9524F4FADC00550975 /* VM */,
 				132D640624ED0778005C7BA3 /* VC */,
 			);
 			path = AnimationPoem;
@@ -1035,6 +1179,7 @@
 		1345CA6124D2C5C000FDD6E8 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				131CFE4124F4E89D00550975 /* AnimationCircleView */,
 				131CFE1524F399F200550975 /* AnimationDelegate */,
 				13209A5D24EA60510067C616 /* WeatherAnimation */,
 				13FC9DF524E53B380021453C /* DrawLightningAnimation */,
@@ -1080,6 +1225,7 @@
 		1345CA6F24D3FC4700FDD6E8 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				131CFE6924F4F95900550975 /* AnimationLabel */,
 				132D641924EE4C61005C7BA3 /* AlphaLabel */,
 				132D641224ED18C8005C7BA3 /* GradientHelper */,
 				13DBAED224E6811C00BD55E8 /* Sticker */,
@@ -1424,6 +1570,7 @@
 				132D640B24ED079A005C7BA3 /* PoemAnimationViewController.xib in Resources */,
 				132D641124ED0DBD005C7BA3 /* 1.jpeg in Resources */,
 				132D643024EFADF4005C7BA3 /* SFUIDisplay.ttf in Resources */,
+				131CFEA324F5027800550975 /* AnimationLabelSettingView.xib in Resources */,
 				1345CA4924D2B08100FDD6E8 /* AnimationStartViewController.xib in Resources */,
 				1345CA6E24D3F5E900FDD6E8 /* AnimationRes.xcassets in Resources */,
 				1353840424DD263B00F511B4 /* GraffitiPictureView.xib in Resources */,
@@ -1487,6 +1634,8 @@
 				13DBAEEF24E689C000BD55E8 /* ViewController+MASAdditions.m in Sources */,
 				13209A6124EA608B0067C616 /* WeatherAnimationBaseLayer.m in Sources */,
 				13233D0324D7E6820078113B /* ShiningLabel.m in Sources */,
+				131CFE9324F4F9F400550975 /* ZCSpinLabel.m in Sources */,
+				131CFE8124F4F9D900550975 /* ZCFlyinLabel.m in Sources */,
 				1321C12A24DBF285009B771C /* ColorValueView.m in Sources */,
 				13233D0D24D810630078113B /* TapLabel.m in Sources */,
 				132D63F924ECF9BE005C7BA3 /* PoemAnimationLayer.m in Sources */,
@@ -1494,6 +1643,8 @@
 				13233D1124D937EB0078113B /* AnimationBookVM.m in Sources */,
 				132D63F124EBBF75005C7BA3 /* WeatherThrunderAnimationLayer.m in Sources */,
 				13DBAEEE24E689C000BD55E8 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				131CFE8F24F4F9F400550975 /* ZCTransparencyLabel.m in Sources */,
+				131CFE9124F4F9F400550975 /* ZCShapeshiftLabel.m in Sources */,
 				13FC9DF424E51E460021453C /* DrawWordsAnimationLayer.m in Sources */,
 				132D640424ED0399005C7BA3 /* BubbleTransitionAnimation.m in Sources */,
 				13DBAF3524E68A0700BD55E8 /* StoryMakeToolsView.m in Sources */,
@@ -1510,11 +1661,14 @@
 				132D642224EF744C005C7BA3 /* PoemView.m in Sources */,
 				13DBAF4224E68A0700BD55E8 /* StoryMakerFontManager.m in Sources */,
 				13233D1F24D94C610078113B /* SnowAnimationView.m in Sources */,
+				131CFEA124F5026900550975 /* AnimationLabelSettingView.m in Sources */,
 				131CFE1824F39D4000550975 /* CustomBasicAnimation.m in Sources */,
 				1345CA2B24D2A99B00FDD6E8 /* AnimationMainViewController.m in Sources */,
 				1345CA3924D2AC5B00FDD6E8 /* AnimationBaseNavViewController.m in Sources */,
 				1321C11C24DBDD04009B771C /* BrushWidthSliderView.m in Sources */,
 				13DBAEF524E689C000BD55E8 /* MASConstraint.m in Sources */,
+				131CFE7124F4F99F00550975 /* ZCEasingUtil.m in Sources */,
+				131CFE9824F4FAF200550975 /* AnimationPoemVM.m in Sources */,
 				1321C10924DBAC86009B771C /* AppDelegate+SystemObserver.m in Sources */,
 				13DBAEF124E689C000BD55E8 /* MASConstraintMaker.m in Sources */,
 				13DBAF3724E68A0700BD55E8 /* StoryMakeStickerFooterCell.m in Sources */,
@@ -1528,15 +1682,20 @@
 				1321C12124DBEB88009B771C /* ColorExtractorView.m in Sources */,
 				1345CA6024D2C43200FDD6E8 /* UIViewController+BookCoverAnimation.m in Sources */,
 				13DBAEF724E689C000BD55E8 /* MASViewAttribute.m in Sources */,
+				131CFE7A24F4F9CD00550975 /* ZCDashLabel.m in Sources */,
 				13DBAEF324E689C000BD55E8 /* NSArray+MASAdditions.m in Sources */,
 				13DBAEF424E689C000BD55E8 /* View+MASAdditions.m in Sources */,
 				13DBAEF224E689C000BD55E8 /* MASLayoutConstraint.m in Sources */,
 				135383F924DD259E00F511B4 /* GraffitiPictureViewController.m in Sources */,
 				13DBAF3D24E68A0700BD55E8 /* ImageUtil.m in Sources */,
 				13209A6824EA61130067C616 /* WeatherSunAnimationLayer.m in Sources */,
+				131CFE6D24F4F98600550975 /* ZCCoreTextLayout.m in Sources */,
 				1321C11324DBB0BC009B771C /* DrawingBoardVM.m in Sources */,
 				132D63FD24ECFC89005C7BA3 /* BookAnimationContainerView.m in Sources */,
+				131CFE8224F4F9D900550975 /* ZCFallLabel.m in Sources */,
 				13DBAF3624E68A0700BD55E8 /* StoryMakeStickerView.m in Sources */,
+				131CFE8E24F4F9F400550975 /* ZCThrownLabel.m in Sources */,
+				131CFE9224F4F9F400550975 /* ZCRevealLabel.m in Sources */,
 				1345CA7324D3FC6700FDD6E8 /* EGLSGlobalGCDTimer.m in Sources */,
 				13DBAF3824E68A0700BD55E8 /* StoryMakeStickerBaseView.m in Sources */,
 				1321C0FE24DBAA29009B771C /* DrawingBoardViewController.m in Sources */,
@@ -1546,10 +1705,13 @@
 				13233D0924D804CA0078113B /* AnimationStartVM.m in Sources */,
 				1321C12724DBEBFD009B771C /* UIView+Animation.m in Sources */,
 				1321C10524DBAABB009B771C /* UIApplication+TopController.m in Sources */,
+				131CFE4424F4E8BA00550975 /* AnimationCircleView.m in Sources */,
 				13DBAF3A24E68A0700BD55E8 /* StoryMakeStickerImageView.m in Sources */,
 				1321C11724DBB1AE009B771C /* DrawingBoardView.m in Sources */,
 				13DBAF3024E68A0700BD55E8 /* StoryMakeImageEditorViewController.m in Sources */,
+				131CFE7B24F4F9CD00550975 /* ZCDuangLabel.m in Sources */,
 				1321C10E24DBAE91009B771C /* NSObject+Observer.m in Sources */,
+				131CFE9024F4F9F400550975 /* ZCFocusLabel.m in Sources */,
 				13233D1524D93EAE0078113B /* IrregularityLabel.m in Sources */,
 				133B458524DAACB900DE64CD /* DrawingBoardCanvasView.m in Sources */,
 				13DBAF4324E68A0800BD55E8 /* UIImage+imageWithColor.m in Sources */,
@@ -1557,6 +1719,7 @@
 				13FC9DF824E53B8C0021453C /* DrawLightningAnimationLayer.m in Sources */,
 				13DBAF3C24E68A0700BD55E8 /* StoryMakeFooterFilterCell.m in Sources */,
 				13233CFE24D7AD3F0078113B /* IrregularityTextContainer.m in Sources */,
+				131CFE7524F4F9C100550975 /* ZCAnimatedLabel.m in Sources */,
 				1321C12E24DCF1E0009B771C /* BrushColorView.m in Sources */,
 				13DBAF3424E68A0700BD55E8 /* StoryMakeStickerColorFootSingleViewController.m in Sources */,
 				132D63F524EBCA47005C7BA3 /* WeatherSnowAnimationLayer.m in Sources */,
@@ -1565,6 +1728,7 @@
 				13209A6E24EA61A10067C616 /* WeatherAnimationViewController.m in Sources */,
 				1345CA6524D2C5F200FDD6E8 /* BookAnimationObject.m in Sources */,
 				1321C10224DBAA84009B771C /* UIViewController+VCJump.m in Sources */,
+				131CFE9C24F4FB0E00550975 /* AnimationPoemView.m in Sources */,
 				13DBAF4424E68A0800BD55E8 /* CDPMonitorKeyboard.m in Sources */,
 				132D63ED24EBB8C2005C7BA3 /* WeatherRainAnimationLayer.m in Sources */,
 				132D640024ED01AC005C7BA3 /* UIView+GetSuperVc.m in Sources */,
