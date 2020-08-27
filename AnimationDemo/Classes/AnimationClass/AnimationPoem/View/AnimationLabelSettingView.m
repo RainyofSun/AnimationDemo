@@ -12,6 +12,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *durationTime;
 @property (weak, nonatomic) IBOutlet UILabel *delayTime;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *animationTypeSegment;
+@property (weak, nonatomic) IBOutlet UIButton *animationTypeBtn;
 
 /** settingViewH */
 @property (nonatomic,readwrite) CGFloat settingViewH;
@@ -19,6 +21,9 @@
 @property (nonatomic,assign) NSInteger selectedSegment;
 /** animationType */
 @property (nonatomic,assign) NSInteger animationType;
+
+/** animationTypeArray */
+@property (nonatomic,strong) NSArray *animationTypeArray;
 
 @end
 
@@ -29,10 +34,19 @@
     self.settingViewH = CGRectGetHeight(self.bounds);
     self.selectedSegment = 0;
     self.animationType = 0;
+    self.animationTypeArray = @[@"Throw", @"Shapeshift", @"Default", @"Duang", @"Fall", @"Alpha", @"Flyin", @"Blur", @"Reveal", @"Spin", @"Dash"];
 }
 
 - (void)dealloc {
     NSLog(@"DELLOC : %@",NSStringFromClass(self.class));
+}
+
+#pragma mark - public methods
+- (void)setAnimationStyle:(NSInteger)animationStyle withAnimationType:(NSInteger)animationType {
+    self.selectedSegment = animationStyle;
+    self.animationType = animationType;
+    [self.animationTypeSegment setSelectedSegmentIndex:self.selectedSegment];
+    [self.animationTypeBtn setTitle:self.animationTypeArray[self.animationType] forState:UIControlStateNormal];
 }
 
 #pragma mark - Tatget
@@ -70,6 +84,7 @@
         return;
     }
     self.animationType = buttonIndex + 10;
+    [self.animationTypeBtn setTitle:self.animationTypeArray[buttonIndex] forState:UIControlStateNormal];
 }
 
 @end

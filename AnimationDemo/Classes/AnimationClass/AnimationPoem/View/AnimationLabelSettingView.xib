@@ -39,7 +39,7 @@
                         <segment title="Line"/>
                     </segments>
                     <connections>
-                        <action selector="touchSegment:" destination="iN0-l3-epB" eventType="touchUpInside" id="axi-PC-fSC"/>
+                        <action selector="touchSegment:" destination="iN0-l3-epB" eventType="valueChanged" id="JK3-2S-wEn"/>
                     </connections>
                 </segmentedControl>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eFf-E2-Rsg">
@@ -115,6 +115,8 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
+                <outlet property="animationTypeBtn" destination="eFf-E2-Rsg" id="V2z-hw-oOW"/>
+                <outlet property="animationTypeSegment" destination="xvN-O9-9sU" id="OHK-yO-40K"/>
                 <outlet property="delayTime" destination="ldl-kK-70D" id="lD3-4S-vLX"/>
                 <outlet property="durationTime" destination="VyX-dE-ktb" id="Yvb-zD-vhP"/>
             </connections>

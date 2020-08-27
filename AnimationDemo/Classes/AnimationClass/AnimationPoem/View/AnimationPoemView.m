@@ -18,6 +18,11 @@
 /** settingView */
 @property (nonatomic,strong) AnimationLabelSettingView *settingView;
 
+/** animationType */
+@property (nonatomic,assign) NSInteger animationType;
+/** animationStyle */
+@property (nonatomic,assign) NSInteger animationStyle;
+
 @end
 
 @implementation AnimationPoemView
@@ -61,7 +66,7 @@
     self.animationSettingBtn.clipsToBounds = YES;
     [self.animationSettingBtn setTarget:self action:@selector(animationSetting:) forControlEvents:UIControlEventTouchUpInside];
     
-    self.animationLabel.backgroundColor = [UIColor redColor];
+    self.animationLabel.backgroundColor = [UIColor clearColor];
     [self animationLabelAppear:YES];
 }
 
@@ -95,13 +100,14 @@
     [self.animationLabel stopAnimation];
     if (animationStyle.integerValue != 0) {
         [self.animationLabel.layoutTool cleanLayout];
-        self.animationLabel.layoutTool.groupType = animationStyle.integerValue - 1;
+        self.animationLabel.layoutTool.groupType = self.animationStyle = animationStyle.integerValue - 1;
     }
     self.animationLabel.animationDuration = duration.floatValue;
     self.animationLabel.animationDelay = delayTime.floatValue;
     if (animationType.integerValue != 0) {
         self.animationLabel.onlyDrawDirtyArea = YES;
         self.animationLabel.layerBased = NO;
+        self.animationStyle = animationType.integerValue - 10;
         switch ((animationType.integerValue - 10)) {
             case 0:
                 object_setClass(self.animationLabel, [ZCThrownLabel class]);
