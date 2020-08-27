@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 /** settingViewH */
 @property (nonatomic,readonly) CGFloat settingViewH;
 
+- (void)setAnimationStyle:(NSInteger)animationStyle withAnimationType:(NSInteger)animationType;
+
 @end
 
 NS_ASSUME_NONNULL_END

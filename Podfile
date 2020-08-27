@@ -5,6 +5,7 @@ def all_Pods
     pod 'YYKit'
     pod 'AvoidCrash', '~> 2.5.2'
     pod 'lottie-ios'
+    pod 'GPUImage'
 end
 
 target 'AnimationDemo' do

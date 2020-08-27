@@ -16,6 +16,7 @@
 #import <objc/runtime.h>
 #import <objc/message.h>
 #import "Masonry.h"
+#import <GPUImage.h>
 
 // 分类文件
 #import "UIViewController+Navigation.h"

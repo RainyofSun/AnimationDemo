@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface AnimationStartVM : AnimationBaseViewModel
 
 /// 创建书动画
-- (void)setupBookAnimation:(UIImageView *)coverView animationVC:(UIViewController *)animationVC;
+- (void)setupBookAnimation:(UIView *)coverView animationVC:(UIViewController *)animationVC targetVC:(NSString *)vcName;
 /// 创建文字闪烁动画
 - (ShiningLabel *)setupShiningLabelAnimation;
 /// 创建测试后门

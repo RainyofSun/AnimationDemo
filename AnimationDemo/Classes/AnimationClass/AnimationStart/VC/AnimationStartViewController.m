@@ -29,8 +29,8 @@
     self.view.backgroundColor = [UIColor orangeColor];
      [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appActive:) name:AppEnterForegroundNotification object:nil];
     [self setupUI];
-    [self.startVM setupBookAnimation:self.bookCover animationVC:self];
-    [self systemWordFont];
+    [self.startVM setupBookAnimation:self.bookCover animationVC:self targetVC:@"AnimationBookViewController"];
+//    [self systemWordFont];
 }
 
 // 获取系统字体库

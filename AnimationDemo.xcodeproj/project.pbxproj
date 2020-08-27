@@ -27,6 +27,9 @@
 		131CFE9C24F4FB0E00550975 /* AnimationPoemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 131CFE9B24F4FB0E00550975 /* AnimationPoemView.m */; };
 		131CFEA124F5026900550975 /* AnimationLabelSettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 131CFEA024F5026900550975 /* AnimationLabelSettingView.m */; };
 		131CFEA324F5027800550975 /* AnimationLabelSettingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 131CFEA224F5027800550975 /* AnimationLabelSettingView.xib */; };
+		131CFEA924F63BB300550975 /* ImageFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 131CFEA724F63BB300550975 /* ImageFilterViewController.m */; };
+		131CFEAA24F63BB300550975 /* ImageFilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 131CFEA824F63BB300550975 /* ImageFilterViewController.xib */; };
+		131CFEAE24F63C9700550975 /* ImageFilterVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 131CFEAD24F63C9700550975 /* ImageFilterVM.m */; };
 		13209A5B24EA2DB80067C616 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13209A5924EA2DB80067C616 /* TestViewController.m */; };
 		13209A5C24EA2DB80067C616 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13209A5A24EA2DB80067C616 /* TestViewController.xib */; };
 		13209A6124EA608B0067C616 /* WeatherAnimationBaseLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 13209A6024EA608B0067C616 /* WeatherAnimationBaseLayer.m */; };
@@ -187,6 +190,11 @@
 		131CFE9F24F5026900550975 /* AnimationLabelSettingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationLabelSettingView.h; sourceTree = "<group>"; };
 		131CFEA024F5026900550975 /* AnimationLabelSettingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationLabelSettingView.m; sourceTree = "<group>"; };
 		131CFEA224F5027800550975 /* AnimationLabelSettingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimationLabelSettingView.xib; sourceTree = "<group>"; };
+		131CFEA624F63BB300550975 /* ImageFilterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageFilterViewController.h; sourceTree = "<group>"; };
+		131CFEA724F63BB300550975 /* ImageFilterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageFilterViewController.m; sourceTree = "<group>"; };
+		131CFEA824F63BB300550975 /* ImageFilterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageFilterViewController.xib; sourceTree = "<group>"; };
+		131CFEAC24F63C9700550975 /* ImageFilterVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageFilterVM.h; sourceTree = "<group>"; };
+		131CFEAD24F63C9700550975 /* ImageFilterVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageFilterVM.m; sourceTree = "<group>"; };
 		13209A5824EA2DB80067C616 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		13209A5924EA2DB80067C616 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		13209A5A24EA2DB80067C616 /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
@@ -522,6 +530,34 @@
 				131CFEA224F5027800550975 /* AnimationLabelSettingView.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		131CFEA424F63B7600550975 /* ImageFilterClass */ = {
+			isa = PBXGroup;
+			children = (
+				131CFEAB24F63C7F00550975 /* VM */,
+				131CFEA524F63B9900550975 /* VC */,
+			);
+			path = ImageFilterClass;
+			sourceTree = "<group>";
+		};
+		131CFEA524F63B9900550975 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				131CFEA624F63BB300550975 /* ImageFilterViewController.h */,
+				131CFEA724F63BB300550975 /* ImageFilterViewController.m */,
+				131CFEA824F63BB300550975 /* ImageFilterViewController.xib */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		131CFEAB24F63C7F00550975 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				131CFEAC24F63C9700550975 /* ImageFilterVM.h */,
+				131CFEAD24F63C9700550975 /* ImageFilterVM.m */,
+			);
+			path = VM;
 			sourceTree = "<group>";
 		};
 		13209A5724EA2D9A0067C616 /* Test */ = {
@@ -1022,6 +1058,7 @@
 				13209A6924EA61770067C616 /* WeatherAnimationClass */,
 				135383F424DD256700F511B4 /* GraffitiPictureClass */,
 				1321C0FA24DBA9F7009B771C /* DrawBoardClass */,
+				131CFEA424F63B7600550975 /* ImageFilterClass */,
 				1345CA4424D2B05000FDD6E8 /* AnimationClass */,
 				1345CA3A24D2ACBD00FDD6E8 /* Macro */,
 				1345CA2724D2A98100FDD6E8 /* Base */,
@@ -1567,6 +1604,7 @@
 				13209A6F24EA61A10067C616 /* WeatherAnimationViewController.xib in Resources */,
 				1345CA1724D2A7AE00FDD6E8 /* Assets.xcassets in Resources */,
 				132D642E24EFADF4005C7BA3 /* PingFang.ttc in Resources */,
+				131CFEAA24F63BB300550975 /* ImageFilterViewController.xib in Resources */,
 				132D640B24ED079A005C7BA3 /* PoemAnimationViewController.xib in Resources */,
 				132D641124ED0DBD005C7BA3 /* 1.jpeg in Resources */,
 				132D643024EFADF4005C7BA3 /* SFUIDisplay.ttf in Resources */,
@@ -1656,6 +1694,7 @@
 				1345CA6B24D3F57900FDD6E8 /* AnimationBookViewController.m in Sources */,
 				1345CA4224D2B03B00FDD6E8 /* AnimationBaseViewController.m in Sources */,
 				1345CA5024D2B18C00FDD6E8 /* UINavigationController+NavigationBar.m in Sources */,
+				131CFEAE24F63C9700550975 /* ImageFilterVM.m in Sources */,
 				135383FE24DD25C600F511B4 /* GraffitiPictureVM.m in Sources */,
 				132D63E924EB885A005C7BA3 /* WeatherCloudAnimationLayer.m in Sources */,
 				132D642224EF744C005C7BA3 /* PoemView.m in Sources */,
@@ -1689,6 +1728,7 @@
 				135383F924DD259E00F511B4 /* GraffitiPictureViewController.m in Sources */,
 				13DBAF3D24E68A0700BD55E8 /* ImageUtil.m in Sources */,
 				13209A6824EA61130067C616 /* WeatherSunAnimationLayer.m in Sources */,
+				131CFEA924F63BB300550975 /* ImageFilterViewController.m in Sources */,
 				131CFE6D24F4F98600550975 /* ZCCoreTextLayout.m in Sources */,
 				1321C11324DBB0BC009B771C /* DrawingBoardVM.m in Sources */,
 				132D63FD24ECFC89005C7BA3 /* BookAnimationContainerView.m in Sources */,
